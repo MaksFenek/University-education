@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex example</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Flex</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#container">Flex container</a></li>
+                <li><a href="#axes">Justify-content and align-items</a></li>
+                <li><a href="#sizes">Flex sizes</a></li>
+                <li><a href="#directions">Flex-direction</a></li>
+                <li><a href="#wrap">Flex-wrap</a></li>
+                <li><a href="#order">Flex-order</a></li>
+                <li><a href="#complex">Complex flexbox</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h2 id="container">Flex container</h2>
+
+        <div class="flex-container">
+            <div class="block">1</div>
+            <div class="block">2</div>
+            <div class="block">3</div>
+        </div>
+
+        <h2 id="axes">Justify-content and align-items</h2>
+
+        <h3>Justify-content</h3>
+
+        <div class="flex-container main-axis">
+            <div class="block">1</div>
+            <div class="block">2</div>
+            <div class="block">3</div>
+        </div>
+        
+        <h3>Align-items</h3>
+
+        <div class="flex-container second-axis">
+            <div class="block">1</div>
+            <div class="block">2</div>
+            <div class="block">3</div>
+        </div>
+
+        <h2 id="sizes">Flex sizes</h2>
+
+        <div class="flex-container main-axis">
+            <div class="block flex-size">1</div>
+            <div class="block flex-size">2</div>
+            <div class="block flex-size">3</div>
+        </div>
+
+        <h2 id="directions">Flex direction</h2>
+
+        <div class="flex-container direction-column">
+            <div class="block">1</div>
+            <div class="block">2</div>
+            <div class="block">3</div>
+        </div>
+
+        <h2 id="wrap">Flex-wrap</h2>
+
+        <div class="flex-container wrap">
+            <div class="block">1</div>
+            <div class="block">2</div>
+            <div class="block">3</div>
+            <div class="block">4</div>
+            <div class="block">5</div>
+            <div class="block">6</div>
+        </div>
+
+        <h2 id="order">Flex order</h2>
+
+        <div class="flex-container">
+            <div class="block order">1</div>
+            <div class="block">2</div>
+            <div class="block">3</div>
+        </div>
+
+        <h2 id="complex">Complex flexbox</h2>
+
+        <div class="flex-container">
+            <div class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, perferendis!</div>
+            <div class="complex">
+            <div class="block">1</div>
+            <div class="block">2</div>
+            <div class="block">3</div>
+        </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+       Copyright © 2021 Arthur V
+    </footer>
+</body>
+</html>

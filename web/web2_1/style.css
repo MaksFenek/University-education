@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+    margin: 1rem;
+}
+
+h1 {
+    font-size: 3.2em;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+
+.block {
+    border: 0.1rem solid black;
+    padding: 1rem;
+    width: 10rem;
+    height: 10rem;
+    background: #424242;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+
+/* Sidebar */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 15rem;
+    background: #d1c4e9;
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav ul {
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+.nav ul li {
+    padding: .8rem;
+}
+
+.nav ul li:first-child {
+    padding-top: 2.5rem;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #212121;
+}
+
+/* Sidebar End */
+
+/* Main */
+
+.main {
+    margin-left: 15rem;
+    width: auto;
+    background: #e8eaf6;
+    padding: 1rem;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.main-axis {
+    justify-content: space-between;
+}   
+
+.second-axis {
+    border: 1px solid black;
+    height: 20rem;
+    align-items: center;
+}
+
+.flex-size {
+    flex: 1;
+}
+
+.flex-size:last-child {
+    flex: 1 30rem;
+}
+
+.direction-column {
+    flex-direction: column ;
+}
+
+.order {
+    order: 2;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap .block {
+    width: 25rem;
+}
+
+.text {
+    font-size: 1.6rem;
+}
+
+.complex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Main end */
+
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15rem;
+    font-size: 1.5rem;
+    height: 3rem;
+    background: #c5cae9 ;
+}
+
+/* Footer end */
