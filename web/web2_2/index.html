@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid example</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Grid</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#container">Grid container</a></li>
+                <li><a href="#template">Grid template</a></li>
+                <li><a href="#structure">Explicit and implicit structure</a></li>
+                <li><a href="#areas">Grid areas</a></li>
+                <li><a href="#sizes">Grid sizes</a></li>
+                <li><a href="#ram">Template RAM</a></li>
+                <li><a href="#align">Aligning elements</a></li>
+                <li><a href="#order">Grid order</a></li>
+                <li><a href="#form">Multi-column form</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <h2 id="container">Grid container</h2>
+
+        <div class="grid">
+            <div class="block">1</div>
+            <div class="block">2</div>
+            <div class="block">3</div>
+            <div class="block">4</div>
+            <div class="block">5</div>
+            <div class="block">6</div>
+        </div>
+
+        <h2 id="template">Grid template</h2>
+
+        <div class="grid template">
+            <div class="block">1</div>
+            <div class="block">2</div>
+            <div class="block">3</div>
+            <div class="block">4</div>
+            <div class="block">5</div>
+            <div class="block">6</div>
+        </div>
+
+
+        <h2 id="structure">Explicit and implicit structure</h2>
+
+        <h3>Explicit structure</h3>
+        <div class="grid explicit">
+            <div class="block">1</div>
+            <div class="block">2</div>
+            <div class="block">3</div>
+            <div class="block">4</div>
+            <div class="block">5</div>
+            <div class="block">6</div>
+        </div>
+
+        <h3>Implicit structure</h3>
+        <div class="grid implicit">
+            <div class="block">1</div>
+            <div class="block">2</div>
+            <div class="block">3</div>
+            <div class="block">4</div>
+            <div class="block">5</div>
+            <div class="block">6</div>
+        </div>
+
+        <h2 id="areas">Grid areas</h2>
+
+        <div class="grid areas">
+            <div class="block gheader">Header</div>
+            <div class="block gmain">Main</div>
+            <div class="block gaside">Aside</div>
+            <div class="block gfooter">Footer</div>
+        </div>
+
+        <h2 id="sizes">Grid sizes</h2>
+        <div class="grid sizes">
+            <div class="block">minmax(100px, auto)</div>
+            <div class="block">minmax(100px, auto)</div>
+            <div class="block">minmax(100px, auto)</div>
+        </div>
+
+        <h2 id="ram">Template RAM</h2>
+        <div class="grid ram">
+            <div class="block">1</div>
+            <div class="block">2</div>
+            <div class="block">3</div>
+            <div class="block">4</div>
+            <div class="block">5</div>
+            <div class="block">6</div>
+        </div>
+
+        <h2 id="align">Aligning elements</h2>
+
+        <h3>Align-self</h3>
+        <div class="grid align">
+            <div class="block">Auto</div>
+            <div class="block">Baseline</div>
+            <div class="block">Center</div>
+            <div class="block">Flex-end</div>
+            <div class="block">Flex-start</div>
+            <div class="block">Stretch</div>
+        </div>
+
+        <h3>Justify-self</h3>
+        <div class="grid justify">
+            <div class="block">Auto</div>
+            <div class="block">Baseline</div>
+            <div class="block">Center</div>
+            <div class="block">End</div>
+            <div class="block">Start</div>
+        </div>
+
+        <h2 id="order">Grid order</h2>
+        <div class="grid order">
+            <div class="block">1</div>
+            <div class="block">2</div>
+            <div class="block">3</div>
+            <div class="block">4</div>
+            <div class="block">5</div>
+            <div class="block">6</div>
+        </div>
+
+        <h2 id="form">Multi-column form</h2>
+        <form class="grid form">
+            <div class="first">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+
+            <label for="tel">Phone number</label>
+            <input type="tel" name="tel" id="tel">
+</div>
+<div class="second">
+            <label for="age">Age</label>
+            <input type="date" name="age" id="age">
+
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address">
+
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div class="third">
+            <button class="btn">Send</button>
+        </div>
+        </form>
+
+        <h2 id="gallery">Gallery</h2>
+        <div class="grid gallery">
+            <div class="gallery-item"><img src="./img/1.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./img/2.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./img/3.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./img/4.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./img/5.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./img/6.jpg" alt=""></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        Copyright © 2021 Arthur V
+     </footer>
+</body>
+</html>
