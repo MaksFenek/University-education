@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet">
-    <title>Вороков Артур Юрьевич. Лабораторная работа 1 Конвертация статического контента в динамический</title>
+    <title>Вороков Артур Юрьевич. Группа 201-322 Лабораторная работа 1 Конвертация статического контента в динамический</title>
 </head>
 
 <body>
