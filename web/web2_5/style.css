@@ -6,6 +6,7 @@
   --lighter-text-color: #fff; 
   --main-blue-color: #1E489B;
   --shape-gray-color: #DCDCDC;
+  --card-bg-color: #F8F8F8;
 }
 
 html {
@@ -40,7 +41,10 @@ a {
   font-size: 1.8rem;
 }
 
-
+.hidden {
+ opacity: 0;
+ transition: 0.3s;
+}
 /* HEADER */
 
 .header {
@@ -362,4 +366,81 @@ a {
 
 .application__description {
   font-size: 1.4rem;
+}
+
+/* MATERIALS */
+
+.materials {
+  padding-top: 7.5rem;
+}
+
+.materials__title {
+  font-size: 4rem;
+  max-width: 82.5rem;
+}
+
+.materials-carousel {
+  overflow-x: hidden;
+  position: relative;
+  padding-top: 5.4rem;
+  padding-bottom: 12.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.materials-carousel-arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right:0;
+}
+
+.materials-carousel-arrows img {
+  margin-left: 4rem;
+  cursor: pointer;
+}
+
+.materials-carousel-arrows img:last-child {transform: rotateY(180deg);}
+
+.materials-carousel__item {
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg-color);
+  max-width: 36rem;
+  height: 22.5rem;
+  margin-right: 3rem;
+  transform: translateX(0);
+  transition: .5s;
+}
+
+.materials-carousel__item:last-child {
+  padding-left: 3rem;
+  padding-right: 0;
+} 
+
+.materials-carousel__item img {
+  margin: 3.9rem 18rem 2.9rem 4rem;
+  max-width: 15rem;
+  max-height: 5rem;
+}
+
+
+.materials-carousel__item p {
+  font-size: 20px;
+  margin: 0 5.6rem 6.6rem 4rem;
+}
+
+.swipe-left {
+  position: absolute;
+  transform: translateX(-50rem);
+  transition: 1s;
+}
+
+.swipe-right {
+  position: absolute;
+  transform: translateX(50rem);
+  transition: 1s;
 }
