@@ -86,8 +86,6 @@ const animatedBushes = bushes.map((img)=> {
   return bush
 })
 
-
-
 //===== FOX =====
 
 

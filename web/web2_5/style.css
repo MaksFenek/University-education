@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: #24242E;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    height: 100%;
+}
+
+.btn {
+  background: #1E489B;
+  color: #FFFFFF;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+/* HEADER */
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 7rem;
+  background: #fff;
+}
+
+.header-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrapper ul {
+    list-style: none;
+    display: flex;
+}
+
+.header-wrapper ul li {
+    padding: 0 1.7rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+.header-tel {
+    text-align: end;
+    display: flex; 
+    flex-direction: column;
+    font-size: 1.8rem;
+}
+
+.header-tel__call {
+    font-size: 1.4rem;
+    color: #1E489B;
+}
+
+/* WELCOME */
+
+.welcome {
+  padding-top: 4rem;
+  min-height: 100vh;
+  background: url(./Img/bg1.jpg) center center no-repeat;
+  
+}
+
+.welcome-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-text {
+  margin-top: 6.5rem;
+}
+
+.welcome-text__title {
+  font-size: 4rem;
+  font-weight: 700;
+  max-width: 60rem;
+}
+
+.blue-line {
+  color: #1E489B;
+}
+
+.welcome-text__subtitle {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+.welcome-icons {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 81rem;
+}
+
+.welcome-icons__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-icons__item p {
+  max-width: 16.5rem;
+  font-size: 1.5rem;
+}
+
+.welcome-wrapper__btn {
+  width: 27.8rem;
+  height: 6.3rem;
+  margin-top: 12rem;
+  margin-bottom: 31.7rem;
+}
