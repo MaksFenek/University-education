@@ -65,18 +65,19 @@
         </div>
     </section>
     <section class="prices">
-        <table>
-            <tr>
-                <td>Order price</td>
-                <td>Price per hour</td>
-                <td>Price for recycling</td>
-            </tr>
-            <tr>
-                <td>20$</td>
-                <td>10$</td>
-                <td>100$</td>
-            </tr>
-        </table>
+        <?php
+        echo '<table>';
+
+        for ($i = 0; $i < 3; $i++) {
+            echo '<tr>';
+
+            for ($j = 0; $j < 3; $j++) echo "<td>$i $j</td>";
+
+            echo '</tr>';
+        }
+
+        echo '</table>';
+        ?>
     </section>
     <footer>
         <p>Copyright © 2020 All Rights Reserved</p>

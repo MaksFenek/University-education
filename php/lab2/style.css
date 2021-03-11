@@ -54,6 +54,10 @@ header .active {
     align-items: center;
 }
 
+.main {
+    display: flex;
+}
+
 .main_title {
     color: #fff;
     font-size: 3rem;

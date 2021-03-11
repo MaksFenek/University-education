@@ -19,18 +19,25 @@
             <h1 class="main_title">Лабораторная работа 2. Вариант 4</h1>
         </div>
     </section>
-    <section>
+    <section class="main">
         <?php
         $x = -10;
         $encounting = 500;
         $step = 2;
-        $type = 'A';
+        $type = 'C';
+        $max = 100;
+        $min = -5;
         if ($type == 'B')
             echo '<ul>';
         elseif ($type == 'C')
             echo '<ol>';
+        elseif ($type == 'D')
+            echo '<table>';
+        elseif ($type == 'E')
+            echo '<div>';
 
         for ($i = 0; $i < $encounting; $i++, $x += $step) {
+
             if ($x <= 10)
                 $f = (5 - $x) / (1 - $x / 5);
             elseif ($x > 10 and $x < 20)
@@ -38,20 +45,30 @@
             elseif ($x >= 20)
                 $f = 2 * $x - 21;
 
+            if ($f >= $max || $f < $min) break;
+
             if ($type == 'A') {
-                echo 'f(' . $x . ')=' . $f;
+                echo "f($x) = $f";
                 if ($i < $encounting - 1)
                     echo '<br>';
-            } else
-                if ($type == 'B' or $type == 'C') {
+            } elseif ($type == 'B' or $type == 'C') {
 
-                echo '<li>f(' . $x . ')=' . $f . '</li>';
+                echo "<li> f($x) = $f</li>";
+            } elseif ($type == 'D') {
+                echo "<td> f($x) = $f</td>";
+            } elseif ($type == 'E') {
+                echo "<div> f($x) = $f</div>";
             }
         }
         if ($type == 'B')
             echo '</ul>';
         elseif ($type == 'C')
             echo '</ol>';
+        elseif ($type == 'D') {
+            echo "</table>";
+        } elseif ($type == 'E') {
+            echo "</div>";
+        }
         ?>
     </section>
     <footer>
