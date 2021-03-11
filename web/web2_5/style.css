@@ -216,6 +216,7 @@ a {
 
 .features {
   padding-top: 2rem;
+  margin-bottom: 13rem;
 }
 
 .features__title {
@@ -279,7 +280,6 @@ a {
 
 .application {
   padding: 5.5rem 0;
-  margin-top: 13rem;
   background: var(--main-text-color);
   color: var(--lighter-text-color);
   position: relative;
@@ -484,4 +484,81 @@ a {
 
 .advantages-features__item p {
   font-size: 2.4rem;
+}
+
+/* second-application */
+
+.second-application {
+  background: var(--lighter-text-color);
+  color: var(--main-text-color);
+}
+
+.second-application .application-form__input {
+  background: var(--card-bg-color);
+  color: var(--main-text-color);
+}
+
+.application__file {
+  display: none;
+}
+
+.application__file-label {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  color: var(--main-blue-color);
+  font-size: 1.6rem;
+}
+
+.application__file-label img {
+  padding-right: 1.4rem;
+}
+
+.guarantee__title {
+  font-size: 4rem;
+}
+
+.guarantee-cards {
+  position: relative;
+  display: flex;
+  height: 24rem;
+  margin-top: 5.6rem;
+  margin-bottom: 18rem;
+  justify-content: space-between;
+}
+
+.guarantee-cards__item:nth-child(2n) {
+  align-self: flex-end;
+}
+
+.guarantee-cards__item {
+  display: flex;
+  flex-direction: column;
+  height: 18rem;
+  width: 18rem;
+}
+
+.guarantee-cards__numbers p {
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+.guarantee-cards__numbers {
+  font-size: 8rem;
+  font-weight: bold;
+  color: var(--main-blue-color);
+}
+
+.guarantee-cards__numbers span {
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: var(--main-text-color);
+}
+
+.guarantee-cards__description {
+  font-size: 2.4rem;
+  padding-top: 5.2rem;
 }
