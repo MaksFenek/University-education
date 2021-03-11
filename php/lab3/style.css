@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lemonada', cursive;
+    font-size: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/******************* HEADER *******************/
+
+header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00796B;
+    display: flex;
+    justify-content: left;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    align-items: center;
+}
+
+.menu_item {
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.menu_item:hover {
+    color: #009688;
+}
+
+header .active {
+    color: #009688;
+}
+
+/******************* INRODUCE SECTION *******************/
+
+.introduce {
+    width: 100%;
+    height: 600px;
+    background-color: #009688;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_title {
+    color: #fff;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.main-section {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.result {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    gap: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.buttons a {
+    text-decoration: none;
+    color: black;
+    border: black 1px solid;
+    padding: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.reset {
+    text-decoration: none;
+    color: black;
+    border: black 1px solid;
+    padding: 10px 10px;
+}
