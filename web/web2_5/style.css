@@ -26,6 +26,10 @@ a {
     color: var(--main-text-color);
 }
 
+h3 {
+  font-size: 4rem;
+}
+
 .container {
     max-width: 1140px;
     margin: auto;
@@ -698,4 +702,57 @@ a {
 
 .projects-content-price__item p {
   padding-left: 2.4rem;
+}
+
+/* EXPERTS */
+
+.experts {
+  background: var(--main-text-color);
+  padding-top: 5rem;
+  padding-bottom: 12rem;
+  color: var(--lighter-text-color);
+}
+
+.experts-people {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.experts-people__item {
+  display: flex;
+  align-items: center;
+}
+
+.experts-people__item-img {
+  border: 3px dashed var(--second-dark-color);
+  border-radius: 50%;
+  padding: 2.4rem;
+}
+
+.experts-people__item-img img {
+  border-radius: 50%;
+}
+
+.experts-people__item-content {
+   max-width: 26.2rem;
+   margin-left: 5.4rem;
+}
+
+.experts-people__item-title {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.experts-people__item-text {
+  font-size: 1.5rem;
+}
+
+/* INSTALLERS */
+
+.installers {
+  background: var(--card-bg-color);
+  padding-top: 7rem;
+  padding-bottom: 12rem;
 }
