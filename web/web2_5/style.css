@@ -569,6 +569,7 @@ a {
 
 .price {
   padding-top: 6rem;
+  padding-bottom: 12rem;
   background: var(--card-bg-color);
 }
 
@@ -610,4 +611,91 @@ a {
 .price-cards__item-expand {
   color: var(--main-blue-color);
   font-size: 1.6rem;
+}
+
+/* PROJECTS */
+
+.projects {
+  padding-top: 6.3rem;
+  padding-bottom: 6.5rem;
+}
+
+.projects .container {
+  position: relative;
+}
+
+.projects-slider {
+  display: flex;
+}
+.projects__title {
+  font-size: 4rem;
+  max-width: 81rem;
+}
+
+.projects-arrows {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+}
+
+.projects-arrows img {
+  cursor: pointer;
+}
+
+.projects-arrows img:last-child {
+  margin-left: 3rem;
+  transform: rotateY(180deg);
+}
+
+.projects-content {
+  display: flex; 
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.projects-content-imgs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 61rem;
+}
+
+.projects-content-description {
+  padding-left: 5.4rem;
+  width: 48rem;
+}
+
+.projects-content-description__title {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.projects-content-description-text {
+  font-size: 1.6rem;
+  padding-bottom: 2rem;
+}
+
+.projects-content-description-text p {
+  margin-top: 2rem;
+}
+
+.projects-content-price {
+  font-size: 1.6rem;
+  padding-left: 3.1rem;
+  padding-top: 3.1rem;
+  border-left: var(--main-blue-color) 9px solid;
+}
+
+.projects-content-price p {
+  padding-bottom: 1.3rem;
+  padding-left: 4.4rem;
+}
+
+.projects-content-price__item {
+  display: flex;
+  align-items: end;
+}
+
+.projects-content-price__item p {
+  padding-left: 2.4rem;
 }
