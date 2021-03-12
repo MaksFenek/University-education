@@ -298,7 +298,7 @@ h3 {
 
 .application-wrapper__img {
   position: absolute;
-  top: -2rem;
+  top: -5rem;
   right: 12.5rem;
 }
 
@@ -755,4 +755,52 @@ h3 {
   background: var(--card-bg-color);
   padding-top: 7rem;
   padding-bottom: 12rem;
+}
+
+/* SERVICES */
+
+.services {
+  padding-bottom: 5rem;
+}
+
+.services__title {
+  margin-bottom: 3rem;
+}
+
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-cards__item {
+  width: 26rem;
+  height: 25.6rem;
+  margin-right: 2rem;
+}
+
+.services-cards__item-number {
+  color: var(--lighter-text-color);
+  font-size: 4rem;
+  height: 61px;
+  width: 50px;
+  transform: skew(-20deg);
+  background: var(--main-blue-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-cards__item-number p {
+  transform: skew(20deg);
+  font-weight: bold;
+}
+
+.services-cards__item-title {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.services-cards__item-text {
+  font-size: 1.4rem;
+  margin-top: 1.4rem;
 }
