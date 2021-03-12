@@ -630,6 +630,7 @@ h3 {
 
 .projects-slider {
   display: flex;
+  overflow-x: hidden;
 }
 .projects__title {
   font-size: 4rem;
@@ -841,4 +842,52 @@ h3 {
 .questions-cards__item p {
   font-size: 1.4rem;
   margin-bottom: 2rem;
+}
+
+/* FOOTER */
+
+.footer {
+  background: var(--main-text-color);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.footer .container {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  color: var(--lighter-text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  padding-right: 3rem;
+  border-right: var(--lighter-text-color) 2px solid;
+}
+
+.footer-logo p {
+  margin-left: 3rem;
+}
+
+.footer-icons {
+  display: flex;
+}
+
+.footer-icons a {
+  display: block;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons img {
+  margin-left: 6rem;
 }
