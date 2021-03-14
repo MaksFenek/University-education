@@ -111,7 +111,7 @@ h3 {
   padding-top: 4rem;
   min-height: 100vh;
   background: url(./Img/bg1.jpg) center center no-repeat;
-  
+  background-size: cover;
 }
 
 .welcome-wrapper {
@@ -152,6 +152,19 @@ h3 {
   align-items: center;
 }
 
+.welcome-icons__item-parallelogram {
+  width: 40px;
+  height: 60px;
+  transform: skew(-20deg);
+  background: var(--main-blue-color);
+  display: flex;
+  justify-content: start;
+  margin-right: 2rem;
+}
+
+.welcome-icons__item-parallelogram img {
+  transform: skew(20deg);
+}
 .welcome-icons__item p {
   max-width: 16.5rem;
   font-size: 1.5rem;
@@ -890,4 +903,260 @@ h3 {
 
 .footer-icons img {
   margin-left: 6rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 980px){
+
+  h3 {
+    font-size: 2.7rem;
+  }
+
+  
+
+  .container {
+    max-width: 448px;
+  }
+
+  .header {
+    display: none;
+    position: absolute;
+    top: 0;
+  }
+
+  .welcome {
+    padding-top: 0;
+  }
+
+  .welcome-text {
+    margin-top: 0;
+  }
+
+  .welcome-text__title {
+    font-size: 2.4rem;
+    line-height: 137%;
+    max-width: 320px;
+    margin-top: 30px;
+  }
+
+  .welcome-text__subtitle {
+    font-size: 1.4rem;
+    max-width: 178px;
+    margin-top: 2rem;
+  }
+
+  .welcome-icons {
+    flex-direction: column;
+    align-items: start;
+    margin-top: 2rem;
+  }
+
+  .welcome-icons__item {
+    margin-top: 2rem;
+  }
+
+  .welcome-wrapper__btn {
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+  }
+
+
+  .about-video {
+    height: auto;
+    width: auto;
+  }
+
+  .about-video img {
+    max-width: 448px;
+    position: relative;
+  }
+
+  .about-video__play {
+    position: absolute;
+    top: 30%;
+    right: 40%;
+    transform: skew(-20deg) scale(0.7);
+  }
+
+  .about__btn {
+    width: 100%;
+  }
+
+  .lines {
+    display: none;
+  }
+
+  .features {
+    margin-bottom: 9rem;
+  }
+
+  .features-item {
+    flex-direction: column;
+  }
+
+  .features-item .features-item__parallelogram:nth-child(odd) {
+    background: var(--main-blue-color);
+  }
+
+  .features-item-text {
+    margin-top: 2rem;
+  }
+
+  .features-item__title {
+    max-width: 100%;
+  }
+
+  .features-item__subtitle {
+    max-width: 100%;
+  }
+
+  .application {
+    padding-bottom: 25rem;
+  }
+
+  .application__title {
+    font-size: 2rem;
+  }
+
+  .application__parallelogram-1 {
+    bottom: 17rem;
+    top: auto;
+  }
+
+  .application__parallelogram-2 {
+    bottom: 20rem;
+    top: auto;
+  }
+
+  .application-wrapper__img {
+    top: auto;
+    bottom: -20rem;
+  }
+
+  .application-form {
+    flex-direction: column;
+  }
+  
+  .application-form__input {
+    margin-bottom: 3rem;
+    max-width: 100%;
+  }
+
+  .application-form__btn {
+    max-width: 100%;
+  }
+
+  .materials__title {
+    font-size: 2.7rem;
+  }
+
+  .materials-carousel-arrows {
+    display: none;
+  }
+  
+  .materials-carousel {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+
+  .materials-carousel .hidden {
+    opacity: 1;
+  }
+
+  .materials-carousel__item {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .advantages {
+    padding-bottom: 3rem;
+  }
+
+  .advantages__title {
+    font-size: 2.7rem;
+  }
+
+  .advantages-features__item {
+    width: 20rem;
+  }
+
+  .advantages-features__item p {
+    font-size: 1.7rem;
+  }
+
+  .guarantee-cards {
+    flex-wrap: wrap;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+
+  .guarantee-cards__item {
+    height: auto;
+    margin-bottom: 3rem;
+  }
+
+  .price {
+    padding-bottom: 6rem;
+  }
+
+  .price-cards {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .price-cards__item {
+    margin-bottom: 3rem;
+  }
+
+  .projects-arrows {
+    display: none;
+  }
+
+  .projects-content {
+    flex-direction: column;
+  }
+
+  .projects-content-imgs {
+    width: auto;
+  }
+
+  .projects-content-imgs img {
+    height: 80%;
+    width: 80%;
+  }
+
+  .projects-content-description {
+    padding-left: 0;
+  }
+
+  .experts-people {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .experts-people__item {
+    margin-top: 4rem;
+  }
+
+  .services-cards__item {
+    width: auto;
+  }
+
+  .questions-cards__item {
+    width: 100%;
+  }
+
+  .questions-cards__item img{
+    margin-bottom: 2rem;
+  }
+
+  .footer-icons a {
+    height: auto;
+  }
+
+  .footer-icons img {
+    margin-left: 1rem;
+  }
 }
