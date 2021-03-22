@@ -1,684 +1,898 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web2_5</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIP Santeh</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="header-wrapper">
-                <div class="header-logo">
-            <img src="./Img/logo.svg" width="150" height="32" alt="logo">
-            <p>Сантехнические услуги в Москве</p>
-        </div>
-        <nav class="header-nav">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="header-logo">
+            <img src="./Img/logo.svg" width="150" height="32" alt="logo" />
+            <p class="header-logo__title">Сантехнические услуги в Москве</p>
+            <p class="header-logo__title-mobile none">+7 (495) 108-24-72</p>
+          </div>
+          <nav class="header-nav">
+            <span class="close none">&times;</span>
             <ul>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Наши преимущества</a></li>
-                <li><a href="#">Услыги и цены</a></li>
-                <li><a href="#">Проекты</a></li>
-                <li><a href="#">Мотажники</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Наши преимущества</a></li>
+              <li><a href="#">Услыги и цены</a></li>
+              <li><a href="#">Проекты</a></li>
+              <li><a href="#">Мотажники</a></li>
             </ul>
-        </nav>
-        <div class="header-tel">
+            <button class="menu-btn btn none">Заказать звонок</button>
+          </nav>
+          <div class="header-tel">
             <a href="tel:+7(495)108-24-72">+7 (495) 108-24-72</a>
             <a class="header-tel__call" href="#">Заказать звонок</a>
+          </div>
+          <img class="burger none" src="./Img/menu.svg" alt="menu" />
         </div>
-            </div>
-    </div>
+      </div>
     </header>
 
     <section class="welcome">
-        <div class="container">
-            <div class="welcome-wrapper">
-                <div class="welcome-text">
-                    <h2 class="welcome-text__title">
-                        Создаем <span class="blue-line">системы водоснабжения и отопления</span> высокого класса по разумной цене
-                    </h2>
-                    <h3 class="welcome-text__subtitle">
-                        Используем европейские материалы с лучшим соотношением цены-качества
-                    </h3>
-                </div>
-                <div class="welcome-icons">
-                    <div class="welcome-icons__item">
-                        <div class="welcome-icons__item-parallelogram"><img src="./Img/icon1.svg" width="47" height="43" alt="icon1"></div>
-                        
-                        <p>Бесплатный выезд при заключении договора</p>
-                    </div>
-                    <div class="welcome-icons__item">
-                        <div class="welcome-icons__item-parallelogram"><img src="./Img/icon2.svg" width="47" height="43" alt=""></div>
-                        
-                        <p>Гарантия на монтажные работы – 2 года</p>
-                    </div>
-                    <div class="welcome-icons__item">
-                        <div class="welcome-icons__item-parallelogram"> <img src="./Img/icon3.svg" width="47" height="43" alt=""></div>
-                       
-                        <p>Сантехника ведущих европейских брендов</p>
-                    </div>
-                </div>
-                <button class="welcome-wrapper__btn btn">Заказать монтаж</button>
+      <div class="container">
+        <div class="welcome-wrapper">
+          <div class="welcome-text">
+            <h2 class="welcome-text__title">
+              Создаем
+              <span class="blue-line">системы водоснабжения и отопления</span>
+              высокого класса по разумной цене
+            </h2>
+            <h3 class="welcome-text__subtitle">
+              Используем европейские материалы с лучшим соотношением
+              цены-качества
+            </h3>
+          </div>
+          <div class="welcome-icons">
+            <div class="welcome-icons__item">
+              <div class="welcome-icons__item-parallelogram">
+                <img src="./Img/icon1.svg" width="47" height="43" alt="icon1" />
+              </div>
+
+              <p>Бесплатный выезд при заключении договора</p>
             </div>
+            <div class="welcome-icons__item">
+              <div class="welcome-icons__item-parallelogram">
+                <img src="./Img/icon2.svg" width="47" height="43" alt="" />
+              </div>
+
+              <p>Гарантия на монтажные работы – 2 года</p>
+            </div>
+            <div class="welcome-icons__item">
+              <div class="welcome-icons__item-parallelogram">
+                <img src="./Img/icon3.svg" width="47" height="43" alt="" />
+              </div>
+
+              <p>Сантехника ведущих европейских брендов</p>
+            </div>
+          </div>
+          <button class="welcome-wrapper__btn btn">Заказать монтаж</button>
         </div>
+      </div>
     </section>
 
     <section class="about">
-        <div class="container">
-            <h3 class="about__title">Посмотрите короткое видео
-                о нашей компании</h3>
-            <div class="about-video">
-                <img src="./Img/aboutVideo.jpg" alt="video">
-                <div class="about-video__play"><a href="#" class="about-video__play-icon"></a></div>
-            </div>
-            <button class="about__btn btn">Оставить заявку</button>
+      <div class="container">
+        <h3 class="about__title">Посмотрите короткое видео о нашей компании</h3>
+        <div class="about-video">
+          <img src="./Img/aboutVideo.jpg" alt="video" />
+          <div class="about-video__play">
+            <a href="#" class="about-video__play-icon"></a>
+          </div>
         </div>
-        <img src="./Img/lines.svg" alt="lines" class="lines">
+        <button class="about__btn btn">Оставить заявку</button>
+      </div>
+      <img src="./Img/lines.svg" alt="lines" class="lines" />
     </section>
 
     <section class="features">
-        <div class="container">
-           <h3 class="features__title">Почему монтаж и капитальный ремонт сантехники заказывают у нас?</h3>
-           <div class="features-blocks">
-               <div class="features-item">
-                   <div class="features-item__parallelogram"><p>01</p></div>
-                   <div class="features-item-text">
-                   <h4 class="features-item__title">Европейские материалы и оборудование</h4>
-                   <p class="features-item__subtitle">Все работы проводятся с использованием современной европейской сантехники от Oventrop, FAR, TECE, Henco, Viega и других ведущих брендов мирового уровня </p>
-                </div>
-               </div>
-               <div class="features-item">
-                   <div class="features-item__parallelogram"><p>02</p></div>
-                   <div class="features-item-text">
-                   <h4 class="features-item__title">Современный дизайн</h4>
-                   <p class="features-item__subtitle">Сочетаем стильную сантехнику с душевыми трапами и скрытыми в стене коммуникациями – это удобно, красиво и современно!</p></div>
-               </div>
-               <div class="features-item">
-                   <div class="features-item__parallelogram"><p>03</p></div>
-                   <div class="features-item-text">
-                   <h4 class="features-item__title">Сертифицированные монтажники</h4>
-                   <p class="features-item__subtitle">Наши специалисты прошли обязательные экзамены и сертификацию, а также имеют опыт работы более 3-х лет и профильное образование</p></div>
-               </div>
-               <div class="features-item">
-                   <div class="features-item__parallelogram"><p>04</p></div>
-                   <div class="features-item-text">
-                   <h4 class="features-item__title">Опыт ведущих сантехнических компаний</h4>
-                   <p class="features-item__subtitle">Главный эксперт VIP Santeh Антон Одноволов – более 6 лет является техническим директором бельгийской компании по производству сантехники Henco Industries</p></div>
-               </div>
-               <div class="features-item">
-                   <div class="features-item__parallelogram"><p>05</p></div>
-                   <div class="features-item-text">
-                   <h4 class="features-item__title">Возможен индивидуальный проект</h4>
-                   <p class="features-item__subtitle">Продумаем правильную разводку трубопроводов, а также оптимальные проходные сечения труб, коллекторов, регулирующей арматуры и фильтров</p></div>
-               </div>
-               <div class="features-item">
-                   <div class="features-item__parallelogram"><p>06</p></div>
-                   <div class="features-item-text">
-                   <h4 class="features-item__title">Гарантия от 2 до 10 лет</h4>
-                   <p class="features-item__subtitle">Предоставляем 2 года гарантии на монтажные работы и 10 лет – на сантехническое оборудование и материалы (от производителя).</p></div>
-               </div>
-           </div>
+      <div class="container">
+        <h3 class="features__title">
+          Почему монтаж и капитальный ремонт сантехники заказывают у нас?
+        </h3>
+        <div class="features-blocks">
+          <div class="features-item">
+            <div class="features-item__parallelogram"><p>01</p></div>
+            <div class="features-item-text">
+              <h4 class="features-item__title">
+                Европейские материалы и оборудование
+              </h4>
+              <p class="features-item__subtitle">
+                Все работы проводятся с использованием современной европейской
+                сантехники от Oventrop, FAR, TECE, Henco, Viega и других ведущих
+                брендов мирового уровня
+              </p>
+            </div>
+          </div>
+          <div class="features-item">
+            <div class="features-item__parallelogram"><p>02</p></div>
+            <div class="features-item-text">
+              <h4 class="features-item__title">Современный дизайн</h4>
+              <p class="features-item__subtitle">
+                Сочетаем стильную сантехнику с душевыми трапами и скрытыми в
+                стене коммуникациями – это удобно, красиво и современно!
+              </p>
+            </div>
+          </div>
+          <div class="features-item">
+            <div class="features-item__parallelogram"><p>03</p></div>
+            <div class="features-item-text">
+              <h4 class="features-item__title">Сертифицированные монтажники</h4>
+              <p class="features-item__subtitle">
+                Наши специалисты прошли обязательные экзамены и сертификацию, а
+                также имеют опыт работы более 3-х лет и профильное образование
+              </p>
+            </div>
+          </div>
+          <div class="features-item">
+            <div class="features-item__parallelogram"><p>04</p></div>
+            <div class="features-item-text">
+              <h4 class="features-item__title">
+                Опыт ведущих сантехнических компаний
+              </h4>
+              <p class="features-item__subtitle">
+                Главный эксперт VIP Santeh Антон Одноволов – более 6 лет
+                является техническим директором бельгийской компании по
+                производству сантехники Henco Industries
+              </p>
+            </div>
+          </div>
+          <div class="features-item">
+            <div class="features-item__parallelogram"><p>05</p></div>
+            <div class="features-item-text">
+              <h4 class="features-item__title">
+                Возможен индивидуальный проект
+              </h4>
+              <p class="features-item__subtitle">
+                Продумаем правильную разводку трубопроводов, а также оптимальные
+                проходные сечения труб, коллекторов, регулирующей арматуры и
+                фильтров
+              </p>
+            </div>
+          </div>
+          <div class="features-item">
+            <div class="features-item__parallelogram"><p>06</p></div>
+            <div class="features-item-text">
+              <h4 class="features-item__title">Гарантия от 2 до 10 лет</h4>
+              <p class="features-item__subtitle">
+                Предоставляем 2 года гарантии на монтажные работы и 10 лет – на
+                сантехническое оборудование и материалы (от производителя).
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="application">
-        <div class="container">
-            <div class="application__parallelogram-1"></div>
-            <div class="application__parallelogram-2"></div>
-            <div class="application__parallelogram-3"></div>
-            <div class="application-wrapper">
-                <img src="./Img/application.jpg" alt="application" class="application-wrapper__img">
-                
-                <h3 class="application__title">
-            Оставьте заявку на выезд монтажника сантехнических систем и получите устройство для измерения давления в трубах и тест на качество воды в подарок!*
-                </h3>
-                <form action="" class="application-form">
-                    <input class="application-form__input" type="text" placeholder="Введите имя" >
-                    <input class="application-form__input" type="tel" placeholder="Телефон">
-                    <input class="application-form__btn btn" type="button" value="Оставить заявку">
-                </form>
-                <p class="application__description">
-                    *за отзыв после проведения сантехнических работ
-                </p>
-            </div>
+      <div class="container">
+        <div class="application__parallelogram-1"></div>
+        <div class="application__parallelogram-2"></div>
+        <div class="application__parallelogram-3"></div>
+        <div class="application-wrapper">
+          <img
+            src="./Img/application.jpg"
+            alt="application"
+            class="application-wrapper__img"
+          />
+
+          <h3 class="application__title">
+            Оставьте заявку на выезд монтажника сантехнических систем и получите
+            устройство для измерения давления в трубах и тест на качество воды в
+            подарок!*
+          </h3>
+          <form action="" class="application-form">
+            <input
+              class="application-form__input"
+              type="text"
+              placeholder="Введите имя"
+            />
+            <input
+              class="application-form__input"
+              type="tel"
+              placeholder="Телефон"
+            />
+            <input
+              class="application-form__btn btn"
+              type="button"
+              value="Оставить заявку"
+            />
+          </form>
+          <p class="application__description">
+            *за отзыв после проведения сантехнических работ
+          </p>
         </div>
+      </div>
     </section>
 
     <section class="materials">
-        <div class="container">
-            <h3 class="materials__title">
-                Мы используем европейские материалы и оборудование премиального качества
-            </h3>
-            <div class="materials-carousel">
-                <div class="materials-carousel-arrows">
-                    <img class="left-arrow"  src="./Img/arrow.svg" alt="prev">
-                    <img class="right-arrow"  src="./Img/arrow.svg" alt="next">
-                </div>
-                <div class="materials-carousel__item" id="1">
-                    <img src="./Img/card1.svg" alt="Ostendorf">
-                    <p>Сертифицированное оборудование и материалы</p>
-                </div>
-                <div class="materials-carousel__item main" id="2"> 
-                    <img src="./Img/card2.svg" alt="Bugatti">
-                    <p>Шаровые краны Bugatti</p>
-                </div>
-                <div class="materials-carousel__item" id="3">
-                    <img src="./Img/card3.svg" alt="FAR">
-                    <p>Коллекторы FAR с регулировкой приоритета подачи воды</p>
-                </div>
+      <div class="container">
+        <h3 class="materials__title">
+          Мы используем европейские материалы и оборудование премиального
+          качества
+        </h3>
+        <div class="materials-carousel">
+          <div class="materials-carousel-arrows">
+            <img class="left-arrow" src="./Img/arrow.svg" alt="prev" />
+            <img class="right-arrow" src="./Img/arrow.svg" alt="next" />
+          </div>
+          <div class="materials-carousel__item" id="1">
+            <img src="./Img/card1.svg" alt="Ostendorf" />
+            <p>Сертифицированное оборудование и материалы</p>
+          </div>
+          <div class="materials-carousel__item main" id="2">
+            <img src="./Img/card2.svg" alt="Bugatti" />
+            <p>Шаровые краны Bugatti</p>
+          </div>
+          <div class="materials-carousel__item" id="3">
+            <img src="./Img/card3.svg" alt="FAR" />
+            <p>Коллекторы FAR с регулировкой приоритета подачи воды</p>
+          </div>
 
-                <div class="materials-carousel__item hidden" id="4">
-                    <img src="./Img/card4.svg" alt="Walraven">
-                    <p>Шумоглушащие крепежные системы Walraven</p>
-                </div>
-                <div class="materials-carousel__item hidden" id="5">
-                    <img src="./Img/card5.svg" alt="TECE">
-                    <p>Невидимые душевые трапы TECE</p>
-                </div>
-                <div class="materials-carousel__item hidden" id="6">
-                    <img src="./Img/card6.svg" alt="Henco">
-                    <p>Металлополимерные трубы с соединениями Henco</p>
-                </div>
-                <div class="materials-carousel__item hidden" id="7">
-                    <img src="./Img/card7.svg" alt="Viega">
-                    <p>Медные трубы Viega</p>
-                </div>
-                <div class="materials-carousel__item hidden" id="8">
-                    <img src="./Img/card8.svg" alt="Honeywell">
-                    <p>Мембранные редукторы Honeywell с защитой от перепадов давления</p>
-                </div>
-            </div>
+          <div class="materials-carousel__item hidden" id="4">
+            <img src="./Img/card4.svg" alt="Walraven" />
+            <p>Шумоглушащие крепежные системы Walraven</p>
+          </div>
+          <div class="materials-carousel__item hidden" id="5">
+            <img src="./Img/card5.svg" alt="TECE" />
+            <p>Невидимые душевые трапы TECE</p>
+          </div>
+          <div class="materials-carousel__item hidden" id="6">
+            <img src="./Img/card6.svg" alt="Henco" />
+            <p>Металлополимерные трубы с соединениями Henco</p>
+          </div>
+          <div class="materials-carousel__item hidden" id="7">
+            <img src="./Img/card7.svg" alt="Viega" />
+            <p>Медные трубы Viega</p>
+          </div>
+          <div class="materials-carousel__item hidden" id="8">
+            <img src="./Img/card8.svg" alt="Honeywell" />
+            <p>
+              Мембранные редукторы Honeywell с защитой от перепадов давления
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="advantages">
-        <div class="container">
-            <h3 class="advantages__title">
-                Преимущества сантехнической  компании VIP Santeh
+      <div class="container">
+        <h3 class="advantages__title">
+          Преимущества сантехнической компании VIP Santeh
         </h3>
         <div class="advantages-features">
-            <div class="advantages-features__item">
-                <div class="advantages-features__border"><img src="./Img/advantages1.svg" alt=""></div>
-                <p>Сертифицированное оборудование и материалы</p>
+          <div class="advantages-features__item">
+            <div class="advantages-features__border">
+              <img src="./Img/advantages1.svg" alt="" />
             </div>
-            <div class="advantages-features__item">
-                <div class="advantages-features__border"><img src="./Img/advantages2.svg" alt=""></div>
-                
-                <p>Создание качественного ﻿проекта при необходимости</p>
+            <p>Сертифицированное оборудование и материалы</p>
+          </div>
+          <div class="advantages-features__item">
+            <div class="advantages-features__border">
+              <img src="./Img/advantages2.svg" alt="" />
             </div>
-            <div class="advantages-features__item">
-                <div class="advantages-features__border"><img src="./Img/advantages3.svg" alt=""></div>
-                
-                <p>Монтаж с использованием современных технологий</p>
+
+            <p>Создание качественного ﻿проекта при необходимости</p>
+          </div>
+          <div class="advantages-features__item">
+            <div class="advantages-features__border">
+              <img src="./Img/advantages3.svg" alt="" />
             </div>
-            <div class="advantages-features__item">
-                <div class="advantages-features__border"><img src="./Img/advantages4.svg" alt=""></div>
-                
-                <p>Гарантия на оборудование и монтажные работы</p>
+
+            <p>Монтаж с использованием современных технологий</p>
+          </div>
+          <div class="advantages-features__item">
+            <div class="advantages-features__border">
+              <img src="./Img/advantages4.svg" alt="" />
             </div>
-            <div class="advantages-features__item">
-                <div class="advantages-features__border"><img src="./Img/advantages5.svg" alt=""></div>
-                
-                <p>Международные стандарты работы</p>
+
+            <p>Гарантия на оборудование и монтажные работы</p>
+          </div>
+          <div class="advantages-features__item">
+            <div class="advantages-features__border">
+              <img src="./Img/advantages5.svg" alt="" />
             </div>
-            <div class="advantages-features__item">
-                <div class="advantages-features__border"><img src="./Img/advantages6.svg" alt=""></div>
-                
-                <p>Индивидуальный контроль за ходом работ</p>
+
+            <p>Международные стандарты работы</p>
+          </div>
+          <div class="advantages-features__item">
+            <div class="advantages-features__border">
+              <img src="./Img/advantages6.svg" alt="" />
             </div>
-            <div class="advantages-features__item">
-                <div class="advantages-features__border"><img src="./Img/advantages7.svg" alt=""></div>
-                
-                <p>Профессиональные специалисты</p>
+
+            <p>Индивидуальный контроль за ходом работ</p>
+          </div>
+          <div class="advantages-features__item">
+            <div class="advantages-features__border">
+              <img src="./Img/advantages7.svg" alt="" />
             </div>
-            <div class="advantages-features__item">
-                <div class="advantages-features__border"><img src="./Img/advantages8.svg" alt=""></div>
-                
-                <p>Соблюдение сроков проекта</p>
+
+            <p>Профессиональные специалисты</p>
+          </div>
+          <div class="advantages-features__item">
+            <div class="advantages-features__border">
+              <img src="./Img/advantages8.svg" alt="" />
             </div>
+
+            <p>Соблюдение сроков проекта</p>
+          </div>
         </div>
-        </div>
-        <img src="./Img/lines.svg" alt="lines" class="lines">
-        
+      </div>
+      <img src="./Img/lines.svg" alt="lines" class="lines" />
     </section>
 
     <section class="application second-application">
-        <div class="container">
-            <div class="application-wrapper">                
-                <h3 class="application__title">
-                    Оставьте заявку для оценки стоимости работ
-                    по фото или выезда специалиста на объект
-                </h3>
-                <form action="" class="application-form">
-                    <input class="application-form__input" type="text" placeholder="Введите имя" >
-                    <input class="application-form__input" type="tel" placeholder="Телефон">
-                    <input class="application-form__btn btn" type="button" value="Оставить заявку">
-                </form>
-                <label class="application__file-label" for="file"><img src="./Img/file.svg" alt="file"> Прикрепить файл</label>
-                <input type="file" name="file" id="file" class="application__file">
-            </div>
+      <div class="container">
+        <div class="application-wrapper">
+          <h3 class="application__title">
+            Оставьте заявку для оценки стоимости работ по фото или выезда
+            специалиста на объект
+          </h3>
+          <form action="" class="application-form">
+            <input
+              class="application-form__input"
+              type="text"
+              placeholder="Введите имя"
+            />
+            <input
+              class="application-form__input"
+              type="tel"
+              placeholder="Телефон"
+            />
+            <input
+              class="application-form__btn btn"
+              type="button"
+              value="Оставить заявку"
+            />
+          </form>
+          <label class="application__file-label" for="file"
+            ><img src="./Img/file.svg" alt="file" /> Прикрепить файл</label
+          >
+          <input type="file" name="file" id="file" class="application__file" />
         </div>
+      </div>
     </section>
 
     <section class="guarantee">
-        <div class="container">
-                <h3 class="guarantee__title">
-                Какие гарантии мы предоставляем?
-            </h3>
+      <div class="container">
+        <h3 class="guarantee__title">Какие гарантии мы предоставляем?</h3>
 
-            <div class="guarantee-cards">
-                <div class="guarantee-cards__item">
-                    <div class="guarantee-cards__numbers"><p>50
-                    <span>лет</span></p></div>
-                    <p class="guarantee-cards__description">гарантии на эксплуатацию оборудования</p>
-                </div>
-                <div class="guarantee-cards__item">
-                    <div class="guarantee-cards__numbers"><p>10
-                        <span>лет</span></p></div>
-                    <p class="guarantee-cards__description">гарантия отсутствия поломок </p>
-                </div>
-                <div class="guarantee-cards__item">
-                    <div class="guarantee-cards__numbers"><p>5
-                        <span>лет</span></p></div>
-                    <p class="guarantee-cards__description">на исправность систем защиты от протечек</p>
-                </div>
-                <div class="guarantee-cards__item">
-                    <div class="guarantee-cards__numbers"><p>2
-                        <span>года</span></p></div>
-                    <p class="guarantee-cards__description">гарантия на монтажные работы</p>
-                </div>
-
+        <div class="guarantee-cards">
+          <div class="guarantee-cards__item">
+            <div class="guarantee-cards__numbers">
+              <p>50 <span>лет</span></p>
             </div>
+            <p class="guarantee-cards__description">
+              гарантии на эксплуатацию оборудования
+            </p>
+          </div>
+          <div class="guarantee-cards__item">
+            <div class="guarantee-cards__numbers">
+              <p>10 <span>лет</span></p>
+            </div>
+            <p class="guarantee-cards__description">
+              гарантия отсутствия поломок
+            </p>
+          </div>
+          <div class="guarantee-cards__item">
+            <div class="guarantee-cards__numbers">
+              <p>5 <span>лет</span></p>
+            </div>
+            <p class="guarantee-cards__description">
+              на исправность систем защиты от протечек
+            </p>
+          </div>
+          <div class="guarantee-cards__item">
+            <div class="guarantee-cards__numbers">
+              <p>2 <span>года</span></p>
+            </div>
+            <p class="guarantee-cards__description">
+              гарантия на монтажные работы
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="price">
-        <div class="container">
-                <h3 class="price__title">
-
-            </h3>
-            <div class="price-cards">
-                <div class="price-cards__item">
-                    <div class="price-cards__item-title">Монтаж водоснабжения и отопления</div>
-                    <div class="price-cards__item-description">Монтаж узлов ввода водоснабжения (холодного и горячего) <br>
-
-                       <strong>от 20 000 ₽</strong> </div>
-                    <div class="price-cards__item-description">Установка унитаза или биде<br>
-
-                       <strong>от 6 000 ₽</strong> </div>
-                    <div class="price-cards__item-description">Прокладка труб водоснабжения и канализации к унитазу, стиральной, посудомоечной машине <br>
-
-                        <strong>от 7 000 ₽</strong>
-                        </div>
-                    <a href="#" class="price-cards__item-expand">Развернуть</a>
-                </div>
-                <div class="price-cards__item">
-                    <div class="price-cards__item-title">Сопутствующие услуги
-                        при монтаже систем водоснабжения</div>
-                    <div class="price-cards__item-description">Переборка центральной канализации (врезка, замена тройников и крестовин) <br>
-
-                       <strong>от 11 000 ₽</strong> </div>
-                    <div class="price-cards__item-description">Изготовление и сборка крепежной  рамы и рамы для инсталляции или узлов водоснабжения ТЕСЕ<br>
-
-                       <strong>от 15 000 ₽</strong> </div>
-                    <div class="price-cards__item-description">Прокладывание штроб в пеноблоке, пазогребне и красном кирпиче <br>
-
-                       <strong>2 000 ₽ за м2</strong> <br>
-                        
-                       <strong>3 000 ₽ за м2 в бетоне</strong> 
-                        
-                        </div>
-                    <a href="#" class="price-cards__item-expand">Развернуть</a>
-                </div>
-                <div class="price-cards__item">
-                    <div class="price-cards__item-title">Современное коллекторное отопление</div>
-                    <div class="price-cards__item-description">Монтаж узла ввода центрального отопления (краны, фильтры, коллекторы и манометры) <br>
-
-                        <strong>от 12 000 ₽</strong> </div>
-                    <div class="price-cards__item-description">Установка и подключение радиатора центрального отопления <br>
-
-                       <strong>от 10 000 ₽</strong> </div>
-                    <div class="price-cards__item-description">Монтаж трубопроводов с учетом линейного удлинения <br>
-
-                       <strong>300 ₽ за м2</strong> 
-                        
-                        </div>
-                    <a href="#" class="price-cards__item-expand">Развернуть</a>
-                </div>
+      <div class="container">
+        <h3 class="price__title"></h3>
+        <div class="price-cards">
+          <div class="price-cards__item">
+            <div class="price-cards__item-title">
+              Монтаж водоснабжения и отопления
             </div>
+            <div class="price-cards__item-description">
+              Монтаж узлов ввода водоснабжения (холодного и горячего) <br />
+
+              <strong>от 20 000 ₽</strong>
+            </div>
+            <div class="price-cards__item-description">
+              Установка унитаза или биде<br />
+
+              <strong>от 6 000 ₽</strong>
+            </div>
+            <div class="price-cards__item-description">
+              Прокладка труб водоснабжения и канализации к унитазу, стиральной,
+              посудомоечной машине <br />
+
+              <strong>от 7 000 ₽</strong>
+            </div>
+            <a href="#" class="price-cards__item-expand">Развернуть</a>
+          </div>
+          <div class="price-cards__item">
+            <div class="price-cards__item-title">
+              Сопутствующие услуги при монтаже систем водоснабжения
+            </div>
+            <div class="price-cards__item-description">
+              Переборка центральной канализации (врезка, замена тройников и
+              крестовин) <br />
+
+              <strong>от 11 000 ₽</strong>
+            </div>
+            <div class="price-cards__item-description">
+              Изготовление и сборка крепежной рамы и рамы для инсталляции или
+              узлов водоснабжения ТЕСЕ<br />
+
+              <strong>от 15 000 ₽</strong>
+            </div>
+            <div class="price-cards__item-description">
+              Прокладывание штроб в пеноблоке, пазогребне и красном кирпиче
+              <br />
+
+              <strong>2 000 ₽ за м2</strong> <br />
+
+              <strong>3 000 ₽ за м2 в бетоне</strong>
+            </div>
+            <a href="#" class="price-cards__item-expand">Развернуть</a>
+          </div>
+          <div class="price-cards__item">
+            <div class="price-cards__item-title">
+              Современное коллекторное отопление
+            </div>
+            <div class="price-cards__item-description">
+              Монтаж узла ввода центрального отопления (краны, фильтры,
+              коллекторы и манометры) <br />
+
+              <strong>от 12 000 ₽</strong>
+            </div>
+            <div class="price-cards__item-description">
+              Установка и подключение радиатора центрального отопления <br />
+
+              <strong>от 10 000 ₽</strong>
+            </div>
+            <div class="price-cards__item-description">
+              Монтаж трубопроводов с учетом линейного удлинения <br />
+
+              <strong>300 ₽ за м2</strong>
+            </div>
+            <a href="#" class="price-cards__item-expand">Развернуть</a>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="application">
-        <div class="container">
-            <div class="application__parallelogram-1"></div>
-            <div class="application__parallelogram-2"></div>
-            <div class="application__parallelogram-3"></div>
-            <div class="application-wrapper">
-                <img src="./Img/calc.svg" alt="application" class="application-wrapper__img">
-                
-                <h3 class="application__title">
-                    Точная стоимость сантехнических работ оговаривается индивидуально после ознакомления с проектной документацией и выезда монтажника на объект
-                </h3>
-                <form action="" class="application-form">
-                    <input class="application-form__input" type="text" placeholder="Введите имя" >
-                    <input class="application-form__input" type="tel" placeholder="Телефон">
-                    <input class="application-form__btn btn" type="button" value="Получить расчёт">
-                </form>
-            </div>
+      <div class="container">
+        <div class="application__parallelogram-1"></div>
+        <div class="application__parallelogram-2"></div>
+        <div class="application__parallelogram-3"></div>
+        <div class="application-wrapper">
+          <img
+            src="./Img/calc.svg"
+            alt="application"
+            class="application-wrapper__img"
+          />
+
+          <h3 class="application__title">
+            Точная стоимость сантехнических работ оговаривается индивидуально
+            после ознакомления с проектной документацией и выезда монтажника на
+            объект
+          </h3>
+          <form action="" class="application-form">
+            <input
+              class="application-form__input"
+              type="text"
+              placeholder="Введите имя"
+            />
+            <input
+              class="application-form__input"
+              type="tel"
+              placeholder="Телефон"
+            />
+            <input
+              class="application-form__btn btn"
+              type="button"
+              value="Получить расчёт"
+            />
+          </form>
         </div>
+      </div>
     </section>
 
     <section class="projects">
-        <div class="container">
-            <h3 class="projects__title">
-                Примеры выполненных сантехнических работ нашей компанией VIP Santeh
-            </h3>
-            <div class="projects-arrows">
-                <img class="projects-arrows-left"  src="./Img/arrow.svg" alt="prev">
-                <img class="projects-arrows-right"  src="./Img/arrow.svg" alt="next">
-            </div>
-            <div class="projects-slider">
-
-            
-            <div class="projects-content main" id="10">
-                <div class="projects-content-imgs">
-                    <img src="./Img/project1.jpg" alt="project">
-                    <img src="./Img/project2.jpg" alt="project">
-                </div>
-                <div class="projects-content-description">
-                    <h4 class="projects-content-description__title">
-                        Отопление + водоснабжение
-                    </h4>
-                    <div class="projects-content-description-text">
-                        <strong><p>Что было выполнено:</p></strong>
-                        <p>Подключены«из стены» 3 радиатора Rifar;</p>
-                        <p>Смонтированы выводы для стиральной машины, раковины, ванны и кухни;</p>
-                        <p>Установлена сантехника.</p>
-                    </div>
-                    <div class="projects-content-price">
-                        <div class="projects-content-price__item">
-                         <img src="./Img/price.svg" alt="price"><p>Стоимость работ составила: 85 000 ₽</p>   
-                        </div>
-                        <p>Стоимость материалов и радиаторов: 150 000 ₽</p>
-                        <div class="projects-content-price__item"><img src="./Img/time.svg" alt="time"><p>Срок выезда на объект и составления сметы: 2 дня</p></div>
-                        
-                        <p>Срок выполнения работ: 2 дня</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projects-content hidden" id="11">
-                <div class="projects-content-imgs">
-                    <img src="./Img/project1.jpg" alt="project">
-                    <img src="./Img/project2.jpg" alt="project">
-                </div>
-                <div class="projects-content-description">
-                    <h4 class="projects-content-description__title">
-                        Отопление + водоснабжение
-                    </h4>
-                    <div class="projects-content-description-text">
-                        <strong><p>Что было выполнено:</p></strong>
-                        <p>Подключены«из стены» 3 радиатора Rifar;</p>
-                        <p>Смонтированы выводы для стиральной машины, раковины, ванны и кухни;</p>
-                        <p>Установлена сантехника.</p>
-                    </div>
-                    <div class="projects-content-price">
-                        <div class="projects-content-price__item">
-                         <img src="./Img/price.svg" alt="price"><p>Стоимость работ составила: 85 000 ₽</p>   
-                        </div>
-                        <p>Стоимость материалов и радиаторов: 150 000 ₽</p>
-                        <div class="projects-content-price__item"><img src="./Img/time.svg" alt="time"><p>Срок выезда на объект и составления сметы: 2 дня</p></div>
-                        
-                        <p>Срок выполнения работ: 2 дня</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projects-content hidden" id="12">
-                <div class="projects-content-imgs">
-                    <img src="./Img/project1.jpg" alt="project">
-                    <img src="./Img/project2.jpg" alt="project">
-                </div>
-                <div class="projects-content-description">
-                    <h4 class="projects-content-description__title">
-                        Отопление + водоснабжение
-                    </h4>
-                    <div class="projects-content-description-text">
-                        <strong><p>Что было выполнено:</p></strong>
-                        <p>Подключены«из стены» 3 радиатора Rifar;</p>
-                        <p>Смонтированы выводы для стиральной машины, раковины, ванны и кухни;</p>
-                        <p>Установлена сантехника.</p>
-                    </div>
-                    <div class="projects-content-price">
-                        <div class="projects-content-price__item">
-                         <img src="./Img/price.svg" alt="price"><p>Стоимость работ составила: 85 000 ₽</p>   
-                        </div>
-                        <p>Стоимость материалов и радиаторов: 150 000 ₽</p>
-                        <div class="projects-content-price__item"><img src="./Img/time.svg" alt="time"><p>Срок выезда на объект и составления сметы: 2 дня</p></div>
-                        
-                        <p>Срок выполнения работ: 2 дня</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projects-content hidden" id="13">
-                <div class="projects-content-imgs">
-                    <img src="./Img/project1.jpg" alt="project">
-                    <img src="./Img/project2.jpg" alt="project">
-                </div>
-                <div class="projects-content-description">
-                    <h4 class="projects-content-description__title">
-                        Отопление + водоснабжение
-                    </h4>
-                    <div class="projects-content-description-text">
-                        <strong><p>Что было выполнено:</p></strong>
-                        <p>Подключены«из стены» 3 радиатора Rifar;</p>
-                        <p>Смонтированы выводы для стиральной машины, раковины, ванны и кухни;</p>
-                        <p>Установлена сантехника.</p>
-                    </div>
-                    <div class="projects-content-price">
-                        <div class="projects-content-price__item">
-                         <img src="./Img/price.svg" alt="price"><p>Стоимость работ составила: 85 000 ₽</p>   
-                        </div>
-                        <p>Стоимость материалов и радиаторов: 150 000 ₽</p>
-                        <div class="projects-content-price__item"><img src="./Img/time.svg" alt="time"><p>Срок выезда на объект и составления сметы: 2 дня</p></div>
-                        
-                        <p>Срок выполнения работ: 2 дня</p>
-                    </div>
-                </div>
-            </div>
-            </div>
+      <div class="container">
+        <h3 class="projects__title">
+          Примеры выполненных сантехнических работ нашей компанией VIP Santeh
+        </h3>
+        <div class="projects-arrows">
+          <img class="projects-arrows-left" src="./Img/arrow.svg" alt="prev" />
+          <img class="projects-arrows-right" src="./Img/arrow.svg" alt="next" />
         </div>
+        <div class="projects-slider">
+          <div class="projects-content main" id="10">
+            <div class="projects-content-imgs">
+              <img src="./Img/project1.jpg" alt="project" />
+              <img src="./Img/project2.jpg" alt="project" />
+            </div>
+            <div class="projects-content-description">
+              <h4 class="projects-content-description__title">
+                Отопление + водоснабжение
+              </h4>
+              <div class="projects-content-description-text">
+                <strong><p>Что было выполнено:</p></strong>
+                <p>Подключены«из стены» 3 радиатора Rifar;</p>
+                <p>
+                  Смонтированы выводы для стиральной машины, раковины, ванны и
+                  кухни;
+                </p>
+                <p>Установлена сантехника.</p>
+              </div>
+              <div class="projects-content-price">
+                <div class="projects-content-price__item">
+                  <img src="./Img/price.svg" alt="price" />
+                  <p>Стоимость работ составила: 85 000 ₽</p>
+                </div>
+                <p>Стоимость материалов и радиаторов: 150 000 ₽</p>
+                <div class="projects-content-price__item">
+                  <img src="./Img/time.svg" alt="time" />
+                  <p>Срок выезда на объект и составления сметы: 2 дня</p>
+                </div>
+
+                <p>Срок выполнения работ: 2 дня</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects-content hidden" id="11">
+            <div class="projects-content-imgs">
+              <img src="./Img/project1.jpg" alt="project" />
+              <img src="./Img/project2.jpg" alt="project" />
+            </div>
+            <div class="projects-content-description">
+              <h4 class="projects-content-description__title">
+                Отопление + водоснабжение
+              </h4>
+              <div class="projects-content-description-text">
+                <strong><p>Что было выполнено:</p></strong>
+                <p>Подключены«из стены» 3 радиатора Rifar;</p>
+                <p>
+                  Смонтированы выводы для стиральной машины, раковины, ванны и
+                  кухни;
+                </p>
+                <p>Установлена сантехника.</p>
+              </div>
+              <div class="projects-content-price">
+                <div class="projects-content-price__item">
+                  <img src="./Img/price.svg" alt="price" />
+                  <p>Стоимость работ составила: 85 000 ₽</p>
+                </div>
+                <p>Стоимость материалов и радиаторов: 150 000 ₽</p>
+                <div class="projects-content-price__item">
+                  <img src="./Img/time.svg" alt="time" />
+                  <p>Срок выезда на объект и составления сметы: 2 дня</p>
+                </div>
+
+                <p>Срок выполнения работ: 2 дня</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects-content hidden" id="12">
+            <div class="projects-content-imgs">
+              <img src="./Img/project1.jpg" alt="project" />
+              <img src="./Img/project2.jpg" alt="project" />
+            </div>
+            <div class="projects-content-description">
+              <h4 class="projects-content-description__title">
+                Отопление + водоснабжение
+              </h4>
+              <div class="projects-content-description-text">
+                <strong><p>Что было выполнено:</p></strong>
+                <p>Подключены«из стены» 3 радиатора Rifar;</p>
+                <p>
+                  Смонтированы выводы для стиральной машины, раковины, ванны и
+                  кухни;
+                </p>
+                <p>Установлена сантехника.</p>
+              </div>
+              <div class="projects-content-price">
+                <div class="projects-content-price__item">
+                  <img src="./Img/price.svg" alt="price" />
+                  <p>Стоимость работ составила: 85 000 ₽</p>
+                </div>
+                <p>Стоимость материалов и радиаторов: 150 000 ₽</p>
+                <div class="projects-content-price__item">
+                  <img src="./Img/time.svg" alt="time" />
+                  <p>Срок выезда на объект и составления сметы: 2 дня</p>
+                </div>
+
+                <p>Срок выполнения работ: 2 дня</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects-content hidden" id="13">
+            <div class="projects-content-imgs">
+              <img src="./Img/project1.jpg" alt="project" />
+              <img src="./Img/project2.jpg" alt="project" />
+            </div>
+            <div class="projects-content-description">
+              <h4 class="projects-content-description__title">
+                Отопление + водоснабжение
+              </h4>
+              <div class="projects-content-description-text">
+                <strong><p>Что было выполнено:</p></strong>
+                <p>Подключены«из стены» 3 радиатора Rifar;</p>
+                <p>
+                  Смонтированы выводы для стиральной машины, раковины, ванны и
+                  кухни;
+                </p>
+                <p>Установлена сантехника.</p>
+              </div>
+              <div class="projects-content-price">
+                <div class="projects-content-price__item">
+                  <img src="./Img/price.svg" alt="price" />
+                  <p>Стоимость работ составила: 85 000 ₽</p>
+                </div>
+                <p>Стоимость материалов и радиаторов: 150 000 ₽</p>
+                <div class="projects-content-price__item">
+                  <img src="./Img/time.svg" alt="time" />
+                  <p>Срок выезда на объект и составления сметы: 2 дня</p>
+                </div>
+
+                <p>Срок выполнения работ: 2 дня</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="experts">
-        <div class="container">
-                <h3 class="experts__title">
-                    Эксперты VIP Santeh
-            </h3>
-            <div class="experts-people">
-                <div class="experts-people__item">
-                    <div class="experts-people__item-img">
-                        <img src="./Img/expert1.jpg" alt="expert">
-                    </div>
-                    <div class="experts-people__item-content">
-                        <h4 class="experts-people__item-title">
-                        Антон Одноволов
-                        </h4>
-                        <p class="experts-people__item-text">
-                            Инженер с опытом работ на премиальном рынке инженерии 15 лет. Последние 6 лет является техническим директором бельгийского производителя инженерных систем Henco Industries
-                        </p>
-                    </div>
-                    
-                </div>
-                <div class="experts-people__item">
-                    <div class="experts-people__item-img">
-                        <img src="./Img/expert2.jpg" alt="expert">
-                    </div>
-                    <div class="experts-people__item-content">
-                        <h4 class="experts-people__item-title">
-                            Иван Власов
-                        </h4>
-                        <p class="experts-people__item-text">
-                            Главный эксперт  национального чемпионата Worldskills Russia в компетенции «Сантехника и отопление»
-                        </p>
-                    </div>
-                    
-                </div>
+      <div class="container">
+        <h3 class="experts__title">Эксперты VIP Santeh</h3>
+        <div class="experts-people">
+          <div class="experts-people__item">
+            <div class="experts-people__item-img">
+              <img src="./Img/expert1.jpg" alt="expert" />
             </div>
+            <div class="experts-people__item-content">
+              <h4 class="experts-people__item-title">Антон Одноволов</h4>
+              <p class="experts-people__item-text">
+                Инженер с опытом работ на премиальном рынке инженерии 15 лет.
+                Последние 6 лет является техническим директором бельгийского
+                производителя инженерных систем Henco Industries
+              </p>
+            </div>
+          </div>
+          <div class="experts-people__item">
+            <div class="experts-people__item-img">
+              <img src="./Img/expert2.jpg" alt="expert" />
+            </div>
+            <div class="experts-people__item-content">
+              <h4 class="experts-people__item-title">Иван Власов</h4>
+              <p class="experts-people__item-text">
+                Главный эксперт национального чемпионата Worldskills Russia в
+                компетенции «Сантехника и отопление»
+              </p>
+            </div>
+          </div>
         </div>
-        
+      </div>
     </section>
 
     <section class="installers">
-        <div class="container">
-            <h3 class="experts__title">
-                Эксперты VIP Santeh
-        </h3>
+      <div class="container">
+        <h3 class="experts__title">Эксперты VIP Santeh</h3>
         <div class="experts-people">
-            <div class="experts-people__item">
-                <div class="experts-people__item-img">
-                    <img src="./Img/installer1.jpg" alt="expert">
-                </div>
-                <div class="experts-people__item-content">
-                    <h4 class="experts-people__item-title">
-                        Виктор Салтыков
-                    </h4>
-                    <p class="experts-people__item-text">
-                        Монтажник санитарно-технический систем и оборудования, с международно признаваемым дипломом Skills Passport, серебряный призёр финала национального чемпионата WorldSkills Russia 2018
-                    </p>
-                </div>
-                
+          <div class="experts-people__item">
+            <div class="experts-people__item-img">
+              <img src="./Img/installer1.jpg" alt="expert" />
             </div>
-            <div class="experts-people__item">
-                <div class="experts-people__item-img">
-                    <img src="./Img/installer2.jpg" alt="expert">
-                </div>
-                <div class="experts-people__item-content">
-                    <h4 class="experts-people__item-title">
-                        Родион Тимофеев
-                    </h4>
-                    <p class="experts-people__item-text">
-                        Сантехник, основатель монтажной бригады с 2-х летним опытом работы у топ-блогера по ремонту квартир Артура Манцевича
-                    </p>
-                </div>
-                
+            <div class="experts-people__item-content">
+              <h4 class="experts-people__item-title">Виктор Салтыков</h4>
+              <p class="experts-people__item-text">
+                Монтажник санитарно-технический систем и оборудования, с
+                международно признаваемым дипломом Skills Passport, серебряный
+                призёр финала национального чемпионата WorldSkills Russia 2018
+              </p>
             </div>
+          </div>
+          <div class="experts-people__item">
+            <div class="experts-people__item-img">
+              <img src="./Img/installer2.jpg" alt="expert" />
+            </div>
+            <div class="experts-people__item-content">
+              <h4 class="experts-people__item-title">Родион Тимофеев</h4>
+              <p class="experts-people__item-text">
+                Сантехник, основатель монтажной бригады с 2-х летним опытом
+                работы у топ-блогера по ремонту квартир Артура Манцевича
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
     </section>
 
     <section class="services">
-        <div class="container">
-            <h3 class="services__title">
-            Как заказать услуги в VIP Santeh?
-        </h3>
+      <div class="container">
+        <h3 class="services__title">Как заказать услуги в VIP Santeh?</h3>
         <div class="services-cards">
-            <div class="services-cards__item">
-                <div class="services-cards__item-number"><p>01</p></div>
-                <h5 class="services-cards__item-title">Заявка</h5>
-                <p class="services-cards__item-text">Оставьте заявку на сайте или позвоните по номеру 8 (495) 108 24 72.Наш специалист проконсультирует вас по видам, стоимости услуг и другим интересующим вас вопросам</p>
-            </div>
-            <div class="services-cards__item">
-                <div class="services-cards__item-number"><p>02</p> </div>
-                <h5 class="services-cards__item-title">Согласование деталей и выезд монтажника на объект</h5>
-                <p class="services-cards__item-text">В течение 1 рабочего дня с вами свяжется руководитель будущего проекта для согласования бюджета, сроков монтажа и осмотра объекта специалистом</p>
-            </div>
-            <div class="services-cards__item">
-                <div class="services-cards__item-number"><p>03</p> </div>
-                <h5 class="services-cards__item-title">Подготовка к заключению договора</h5>
-                <p class="services-cards__item-text">Мы отправим вам коммерческое предложение и согласуем строительную готовность объекта. Обсуждение возможно в WhatsApp, Skype или Telegram</p>
-            </div>
-            <div class="services-cards__item">
-                <div class="services-cards__item-number"><p>04</p> </div>
-                <h5 class="services-cards__item-title">Заключение договора и предоплата</h5>
-                <p class="services-cards__item-text">После подписания договора необходимо внести предоплату в размере 30% от общей стоимости заказа</p>
-            </div>
-            <div class="services-cards__item">
-                <div class="services-cards__item-number"><p>05</p> </div>
-                <h5 class="services-cards__item-title">Подготовка к монтажным работам</h5>
-                <p class="services-cards__item-text">Специалисты составят проект при необходимости, сделают замеры, обсудят с вами детали сметы, общую сумму материалов и проконтролируют состояние объекта</p>
-            </div>
-            <div class="services-cards__item">
-                <div class="services-cards__item-number"><p> 06</p></div>
-                <h5 class="services-cards__item-title">Проведение работ</h5>
-                <p class="services-cards__item-text">Срок выполнения монтажа – от 1 до 2 недель. Специалисты проведут черновую уборку помещения и отправят клиенту отчет в виде фото и видео</p>
-            </div>
-            <div class="services-cards__item">
-                <div class="services-cards__item-number"><p>07</p> </div>
-                <h5 class="services-cards__item-title">Презентация и сдача работ</h5>
-                <p class="services-cards__item-text">В назначенную дату и время мы презентуем клиенту выполненную работу, передадим документы, гарантии и паспорта на сантехническое оборудование</p>
-            </div>
+          <div class="services-cards__item">
+            <div class="services-cards__item-number"><p>01</p></div>
+            <h5 class="services-cards__item-title">Заявка</h5>
+            <p class="services-cards__item-text">
+              Оставьте заявку на сайте или позвоните по номеру 8 (495) 108 24
+              72.Наш специалист проконсультирует вас по видам, стоимости услуг и
+              другим интересующим вас вопросам
+            </p>
+          </div>
+          <div class="services-cards__item">
+            <div class="services-cards__item-number"><p>02</p></div>
+            <h5 class="services-cards__item-title">
+              Согласование деталей и выезд монтажника на объект
+            </h5>
+            <p class="services-cards__item-text">
+              В течение 1 рабочего дня с вами свяжется руководитель будущего
+              проекта для согласования бюджета, сроков монтажа и осмотра объекта
+              специалистом
+            </p>
+          </div>
+          <div class="services-cards__item">
+            <div class="services-cards__item-number"><p>03</p></div>
+            <h5 class="services-cards__item-title">
+              Подготовка к заключению договора
+            </h5>
+            <p class="services-cards__item-text">
+              Мы отправим вам коммерческое предложение и согласуем строительную
+              готовность объекта. Обсуждение возможно в WhatsApp, Skype или
+              Telegram
+            </p>
+          </div>
+          <div class="services-cards__item">
+            <div class="services-cards__item-number"><p>04</p></div>
+            <h5 class="services-cards__item-title">
+              Заключение договора и предоплата
+            </h5>
+            <p class="services-cards__item-text">
+              После подписания договора необходимо внести предоплату в размере
+              30% от общей стоимости заказа
+            </p>
+          </div>
+          <div class="services-cards__item">
+            <div class="services-cards__item-number"><p>05</p></div>
+            <h5 class="services-cards__item-title">
+              Подготовка к монтажным работам
+            </h5>
+            <p class="services-cards__item-text">
+              Специалисты составят проект при необходимости, сделают замеры,
+              обсудят с вами детали сметы, общую сумму материалов и
+              проконтролируют состояние объекта
+            </p>
+          </div>
+          <div class="services-cards__item">
+            <div class="services-cards__item-number"><p>06</p></div>
+            <h5 class="services-cards__item-title">Проведение работ</h5>
+            <p class="services-cards__item-text">
+              Срок выполнения монтажа – от 1 до 2 недель. Специалисты проведут
+              черновую уборку помещения и отправят клиенту отчет в виде фото и
+              видео
+            </p>
+          </div>
+          <div class="services-cards__item">
+            <div class="services-cards__item-number"><p>07</p></div>
+            <h5 class="services-cards__item-title">
+              Презентация и сдача работ
+            </h5>
+            <p class="services-cards__item-text">
+              В назначенную дату и время мы презентуем клиенту выполненную
+              работу, передадим документы, гарантии и паспорта на сантехническое
+              оборудование
+            </p>
+          </div>
         </div>
-        </div>
-        
+      </div>
     </section>
 
     <section class="application">
-        <div class="container">
-            <div class="application__parallelogram-1"></div>
-            <div class="application__parallelogram-2"></div>
-            <div class="application__parallelogram-3"></div>
-            <div class="application-wrapper">
-                <img src="./Img/application.jpg" alt="application" class="application-wrapper__img">
-                
-                <h3 class="application__title">
-                    Закажите услуги монтажа сантехнических систем и получите устройство для измерения давления в трубах
-                </h3>
-                <form action="" class="application-form">
-                    <input class="application-form__input" type="text" placeholder="Введите имя" >
-                    <input class="application-form__input" type="tel" placeholder="Телефон">
-                    <input class="application-form__btn btn" type="button" value="Оставить заявку">
-                </form>
-                <p class="application__description">
-                    + тест на качество воды в подарок!
-                </p>
-            </div>
+      <div class="container">
+        <div class="application__parallelogram-1"></div>
+        <div class="application__parallelogram-2"></div>
+        <div class="application__parallelogram-3"></div>
+        <div class="application-wrapper">
+          <img
+            src="./Img/application.jpg"
+            alt="application"
+            class="application-wrapper__img"
+          />
+
+          <h3 class="application__title">
+            Закажите услуги монтажа сантехнических систем и получите устройство
+            для измерения давления в трубах
+          </h3>
+          <form action="" class="application-form">
+            <input
+              class="application-form__input"
+              type="text"
+              placeholder="Введите имя"
+            />
+            <input
+              class="application-form__input"
+              type="tel"
+              placeholder="Телефон"
+            />
+            <input
+              class="application-form__btn btn"
+              type="button"
+              value="Оставить заявку"
+            />
+          </form>
+          <p class="application__description">
+            + тест на качество воды в подарок!
+          </p>
         </div>
+      </div>
     </section>
 
     <section class="questions">
-        <div class="container">
-            <h3 class="questions__title">
-            У вас остались вопросы?
-        </h3>
+      <div class="container">
+        <h3 class="questions__title">У вас остались вопросы?</h3>
         <div class="questions-cards">
-            <div class="questions-cards__item">
-                <img src="./Img/phone.svg" alt="phone">
-                <p>Позвонить по номеру</p>
-                <a href="tel:+74951082472">8 (495) 108 24 72</a>
-            </div>
-            <div class="questions-cards__item">
-                <img src="./Img/mail.svg" alt="phone">
-                <p>Или напишите нам на почту:</p>
-                <a href="mailto:info@vip-santeh.com">info@vip-santeh.com</a>
-            </div>
-            <div class="questions-cards__item">
-                <img src="./Img/monitor.svg" alt="phone">
-                <p>Наш сайт:</p>
-                <a href="#">www.vip-santeh.com</a>
-            </div>
+          <div class="questions-cards__item">
+            <img src="./Img/phone.svg" alt="phone" />
+            <p>Позвонить по номеру</p>
+            <a href="tel:+74951082472">8 (495) 108 24 72</a>
+          </div>
+          <div class="questions-cards__item">
+            <img src="./Img/mail.svg" alt="phone" />
+            <p>Или напишите нам на почту:</p>
+            <a href="mailto:info@vip-santeh.com">info@vip-santeh.com</a>
+          </div>
+          <div class="questions-cards__item">
+            <img src="./Img/monitor.svg" alt="phone" />
+            <p>Наш сайт:</p>
+            <a href="#">www.vip-santeh.com</a>
+          </div>
         </div>
-        </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-logo">
-                <img src="./Img/footerlogo.svg" alt="logo">
-                <p>Сантехнические услуги в Москве</p>
-            </div>
-            <div class="footer-icons">
-                <a href="http://vk.com"><img src="./Img/vk.svg" alt="vk"></a>
-                <a href="http://instagram.com"><img src="./Img/instagram.svg" alt="instagram"></a>
-                <a href="http://youtube.com"><img src="./Img/youtube.svg" alt="youtube"></a>
-            </div>
+      <div class="container">
+        <div class="footer-logo">
+          <img src="./Img/footerlogo.svg" alt="logo" />
+          <p>Сантехнические услуги в Москве</p>
         </div>
+        <div class="footer-icons">
+          <a href="http://vk.com"><img src="./Img/vk.svg" alt="vk" /></a>
+          <a href="http://instagram.com"
+            ><img src="./Img/instagram.svg" alt="instagram"
+          /></a>
+          <a href="http://youtube.com"
+            ><img src="./Img/youtube.svg" alt="youtube"
+          /></a>
+        </div>
+      </div>
     </footer>
 
-    <script  src="./main.js"></script>
-</body>
+    <script src="./main.js"></script>
+  </body>
 </html>
