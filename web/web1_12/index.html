@@ -1,0 +1,134 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <div id="app">
+      <header class="header">
+        <h1 class="header__title">Список студентов</h1>
+        <p class="header__desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+          adipisci aliquam amet autem dolore doloribus eum incidunt, ipsum
+          laudantium magni maxime necessitatibus odio odit officia porro quis
+          quo veritatis voluptas?
+        </p>
+      </header>
+
+      <form action="#" class="form">
+        <h2 class="form__title">Форма</h2>
+
+        <label class="form__label"
+          >Фамилия
+          <input
+            @input="validate()"
+            v-model="surnameInput"
+            type="text"
+            class="form__input"
+          />
+        </label>
+
+        <label class="form__label">
+          Имя
+
+          <input
+            @input="validate()"
+            v-model="firstNameInput"
+            type="text"
+            class="form__input"
+          />
+        </label>
+
+        <div class="form__count">
+          Количество символов: {{ surnameInput.length + firstNameInput.length }}
+        </div>
+
+        <input
+          :disabled="isDisabled"
+          @click="addStudents($event)"
+          type="submit"
+          value="Записать"
+          class="form__submit"
+        />
+      </form>
+
+      <ol class="list" v-if="students.length">
+        <li
+          v-for="student in students"
+          :key="student.idLast"
+          class="list__item"
+        >
+          {{ student.firstName + ' ' + student.surname }}
+        </li>
+      </ol>
+
+      <span v-else class="form__empty">Список пуст</span>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+      const App = {
+        data() {
+          return {
+            students: [],
+
+            idLast: 0,
+
+            isDisabled: true,
+
+            surnameInput: '',
+            firstNameInput: '',
+          };
+        },
+        methods: {
+          addStudents(e) {
+            e.preventDefault();
+            this.idLast += 1;
+
+            let firstNameModified =
+                this.firstNameInput[0].toUpperCase() +
+                this.firstNameInput.toLowerCase().slice(1),
+              surnameModified =
+                this.surnameInput[0].toUpperCase() +
+                this.surnameInput.toLowerCase().slice(1);
+
+            this.students.push({
+              firstName: firstNameModified,
+              surname: surnameModified,
+              id: this.idLast,
+            });
+
+            this.clearForm();
+          },
+
+          validate() {
+            if (this.firstNameInput && this.surnameInput) {
+              this.isDisabled = false;
+            } else {
+              this.isDisabled = true;
+            }
+          },
+
+          clearForm() {
+            this.surnameInput = '';
+            this.firstNameInput = '';
+            this.isDisabled = true;
+          },
+        },
+      };
+
+      Vue.createApp(App).mount('#app');
+    </script>
+  </body>
+</html>
