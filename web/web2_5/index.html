@@ -82,7 +82,13 @@
       <div class="container">
         <h3 class="about__title">Посмотрите короткое видео о нашей компании</h3>
         <div class="about-video">
-          <img src="./Img/aboutVideo.jpg" alt="video" />
+          <picture>
+            <source
+              media="(max-width: 980px)"
+              srcset="./Img/aboutVideo-mobile.jpg"
+            />
+            <img src="./Img/aboutVideo.jpg" alt="video" />
+          </picture>
           <div class="about-video__play">
             <a href="#" class="about-video__play-icon"></a>
           </div>
