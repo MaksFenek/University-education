@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+}
+
+.btn {
+  font-size: 2rem;
+  background: #CC8B86;
+  color: #533738;
+  border: 0;
+  outline: none;
+  padding: 25px 65px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #E2C4BA;
+}/*# sourceMappingURL=main.css.map */

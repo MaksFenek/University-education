@@ -1,0 +1,16 @@
+@use '../base'as b;
+
+.btn {
+    font-size: 2rem;
+    background: b.$btn-bg-color;
+    color: b.$btn-text-color;
+    border: 0;
+    outline: none;
+    padding: 25px 65px;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        background: b.$btn-hover-bg-color;
+    }
+}
