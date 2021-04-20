@@ -1,0 +1,56 @@
+@use '../base'as b;
+
+.projects {
+    background: b.$main-bg-color;
+    padding: 65px 0;
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    &__dlc {
+        @include b.flex(center, center);
+        cursor: pointer;
+        margin-top: 40px;
+
+        h3 {
+            padding-right: 10px;
+        }
+    }
+
+    &-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+
+        .card:nth-child(1) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .card:nth-child(2) {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .card:nth-child(3) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .card:nth-child(4) {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+    }
+}
