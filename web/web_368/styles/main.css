@@ -16,7 +16,7 @@ ul {
 
 a,
 p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 a {
@@ -26,6 +26,10 @@ a {
 
 h1 {
   font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
 }
 
 .btn {
@@ -76,6 +80,49 @@ h1 {
   max-width: 424px;
   line-height: 1.5;
   margin-bottom: 24px;
+}
+
+.about {
+  background: #EFE6E4;
+  padding-top: 65px;
+}
+.about__title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.about-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-bottom: 21px;
+}
+.about-content__img {
+  height: 465px;
+  width: 444px;
+}
+.about-content__text {
+  max-width: 528px;
+  line-height: 2;
+}
+.about-footer {
+  background: #8D7370;
+  padding: 65px 0;
+}
+.about-footer__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-footer__list-item {
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFF;
+}
+.about-footer__list-item p:first-child {
+  font-size: 5rem;
+}
+.about-footer__list-item p:last-child {
+  font-size: 3rem;
 }
 
 .container {

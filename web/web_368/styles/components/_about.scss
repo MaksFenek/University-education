@@ -1,0 +1,51 @@
+@use '../base'as b;
+
+.about {
+    background: b.$main-bg-color;
+    padding-top: 65px;
+
+    &__title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    &-content {
+        @include b.flex(space-evenly, flex-start);
+        padding-bottom: 21px;
+
+        &__img {
+            height: 465px;
+            width: 444px;
+        }
+
+        &__text {
+            max-width: 528px;
+            line-height: 2;
+        }
+    }
+
+    &-footer {
+        background: b.$darker-bg-color;
+        padding: 65px 0;
+
+        &__list {
+            @include b.flex(space-around, center);
+
+            &-item {
+                text-transform: uppercase;
+                text-align: center;
+                color: b.$second-text-color;
+
+                p:first-child {
+                    font-size: 5rem;
+                }
+
+                p:last-child {
+                    font-size: 3rem;
+                }
+            }
+
+        }
+
+    }
+}
