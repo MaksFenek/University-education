@@ -13,12 +13,14 @@
 
 <body>
     <header>
-        <p>Logo</p>
+        <img src="./logo.png">
     </header>
 
 
     <section class="main-section">
         <?php
+            $count = $_GET['count'];
+            $incCount = $count + 1;
         if (!isset($_GET['store']))
             $_GET['store'] = '';
         else
@@ -29,16 +31,16 @@
         echo '<div class="buttons">';
         for ($i = 0; $i <= 9; $i++) {
             $store = $_GET['store'];
-            echo "<a href='?key=$i&store=$store'>$i</a>";
+            echo "<a href='?count=$incCount&key=$i&store=$store'>$i</a>";
         }
-        echo '</div>'
+        echo '</div>';
+        echo "<a class='reset' href='index.php?count=$incCount'>СБРОС</a>";
         ?>
 
-        <a class="reset" href="index.php">СБРОС</a>
 
     </section>
     <footer>
-        <p>Copyright © 2021 All Rights Reserved</p>
+        <p> Количество нажатий: <?php echo $count ?></p>
     </footer>
 </body>
 
