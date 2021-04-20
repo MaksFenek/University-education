@@ -13,24 +13,25 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Vue.js -->
+    <script src="https://unpkg.com/vue@next"></script>
   </head>
   <body class="body">
     <div id="app">
       <header class="header">
         <h1 class="header__title">Список студентов</h1>
         <p class="header__desc">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-          adipisci aliquam amet autem dolore doloribus eum incidunt, ipsum
-          laudantium magni maxime necessitatibus odio odit officia porro quis
-          quo veritatis voluptas?
+          Мое первое веб-приложение на Vue.js для ведения списка студентов.
         </p>
       </header>
 
       <form action="#" class="form">
         <h2 class="form__title">Форма</h2>
 
-        <label class="form__label"
-          >Фамилия
+        <label class="form__label">
+          <div class="form__input-title">Фамилия</div>
+
           <input
             @input="validate()"
             v-model="surnameInput"
@@ -40,7 +41,7 @@
         </label>
 
         <label class="form__label">
-          Имя
+          <div class="form__input-title">Имя</div>
 
           <input
             @input="validate()"
@@ -76,7 +77,6 @@
       <span v-else class="form__empty">Список пуст</span>
     </div>
 
-    <script src="https://unpkg.com/vue@next"></script>
     <script>
       const App = {
         data() {
@@ -96,6 +96,7 @@
             e.preventDefault();
             this.idLast += 1;
 
+            // Форматируем имя в нормальный вид. Первая буква прописная, остальные строчные
             let firstNameModified =
                 this.firstNameInput[0].toUpperCase() +
                 this.firstNameInput.toLowerCase().slice(1),
@@ -113,11 +114,9 @@
           },
 
           validate() {
-            if (this.firstNameInput && this.surnameInput) {
+            if (this.firstNameInput && this.surnameInput)
               this.isDisabled = false;
-            } else {
-              this.isDisabled = true;
-            }
+            else this.isDisabled = true;
           },
 
           clearForm() {

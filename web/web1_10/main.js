@@ -1,233 +1,190 @@
-window.onload = function () {
-  let cnv = document.getElementById('canvas');
-  const cnvWidth = 250;
-  const cnvHeight = 250;
-  let players = ['player1', 'player2'];
-  let odd = [0, 0];
-  let turns = [
-    [' ', ' ', ' '],
-    [' ', ' ', ' '],
-    [' ', ' ', ' '],
-  ];
-  let winCondition = [
-    [
-      [0, 0],
-      [0, 1],
-      [0, 2],
-    ],
-    [
-      [1, 0],
-      [1, 1],
-      [1, 2],
-    ],
-    [
-      [2, 0],
-      [2, 1],
-      [2, 2],
-    ],
-    [
-      [0, 0],
-      [1, 0],
-      [2, 0],
-    ],
-    [
-      [0, 1],
-      [1, 1],
-      [2, 1],
-    ],
-    [
-      [0, 2],
-      [1, 2],
-      [2, 2],
-    ],
-    [
-      [0, 0],
-      [1, 1],
-      [2, 2],
-    ],
-    [
-      [0, 2],
-      [1, 1],
-      [2, 0],
-    ],
-  ];
-  let oSize = cnvWidth / 12;
-  let yach = cnvWidth / 3;
-  let xSize = cnvWidth / 6;
-  cnv.width = cnvWidth;
-  cnv.height = cnvHeight;
-  let ctx = cnv.getContext('2d');
-  let turn = 1;
-  let plr = 0;
-  startGame(ctx, cnvWidth, cnvHeight);
-  document.getElementById('reset').addEventListener('click', () => {
-    canvas.width = canvas.width;
-    turns = [
-      [' ', ' ', ' '],
-      [' ', ' ', ' '],
-      [' ', ' ', ' '],
-    ];
-    turn = 1;
-    odd = [0, 0];
-    document.getElementById('player1').innerText = odd[0];
-    document.getElementById('player2').innerText = odd[1];
-    setOrder();
-    ctx.beginPath();
-    ctx.lineWidth = 3;
-    ctx.moveTo(cnvWidth / 3, 0);
-    ctx.lineTo(cnvWidth / 3, cnvHeight);
-    ctx.moveTo((cnvWidth / 3) * 2, 0);
-    ctx.lineTo((cnvWidth / 3) * 2, cnvHeight);
-    ctx.moveTo(0, cnvHeight / 3);
-    ctx.lineTo(cnvWidth, cnvHeight / 3);
-    ctx.moveTo(0, (cnvHeight / 3) * 2);
-    ctx.lineTo(cnvWidth, (cnvHeight / 3) * 2);
-    ctx.stroke();
-  });
-  document
-    .getElementById('newraund')
-    .addEventListener('click', () => startGame());
-  cnv.addEventListener('click', (e) => newTurn(e, ctx, oSize, yach, xSize));
+class TicTacToe {
+  constructor({
+    canvas,
+    firstCounter,
+    secondCounter,
+    btnNewRound,
+    btnReset,
+    currentMove,
+  }) {
+    this.canvasSel = canvas;
+    this.firstCounterSel = firstCounter;
+    this.secondCounterSel = secondCounter;
+    this.btnNewRoundSel = btnNewRound;
+    this.btnResetSel = btnReset;
+    this.currentMoveSel = currentMove;
 
-  function startGame() {
-    canvas.width = canvas.width;
-    turns = [
-      [' ', ' ', ' '],
-      [' ', ' ', ' '],
-      [' ', ' ', ' '],
-    ];
-    turn = 1;
-    setOrder();
-    ctx.beginPath();
-    ctx.lineWidth = 3;
-    ctx.moveTo(cnvWidth / 3, 0);
-    ctx.lineTo(cnvWidth / 3, cnvHeight);
-    ctx.moveTo((cnvWidth / 3) * 2, 0);
-    ctx.lineTo((cnvWidth / 3) * 2, cnvHeight);
-    ctx.moveTo(0, cnvHeight / 3);
-    ctx.lineTo(cnvWidth, cnvHeight / 3);
-    ctx.moveTo(0, (cnvHeight / 3) * 2);
-    ctx.lineTo(cnvWidth, (cnvHeight / 3) * 2);
-    ctx.stroke();
+    this.init();
   }
 
-  function setOrder() {
-    if (plr == 0) {
-      document.getElementById('plrnow').innerText = 'первый';
-    } else {
-      document.getElementById('plrnow').innerText = 'второй';
+  init() {
+    this.currentMove = 'X';
+
+    this.firstCounter = 0;
+    this.secondCounter = 0;
+
+    this.canvasEl = document.querySelector(this.canvasSel);
+    this.firstCounterEl = document.querySelector(this.firstCounterSel);
+    this.secondCounterEl = document.querySelector(this.secondCounterSel);
+    this.btnNewRoundEl = document.querySelector(this.btnNewRoundSel);
+    this.btnResetEl = document.querySelector(this.btnResetSel);
+    this.currentMoveEl = document.querySelector(this.currentMoveSel);
+
+    this.ctx = this.canvasEl.getContext('2d');
+    this.cellSize = this.canvasEl.width / 3;
+
+    this.initBoard();
+
+    this.canvasEl.addEventListener('click', (e) => this.handleClick(e));
+    this.btnNewRoundEl.addEventListener('click', () => this.initBoard());
+    this.btnResetEl.addEventListener('click', () => this.reset());
+  }
+
+  handleClick(e) {
+    if (this.winner != null) return;
+
+    const targetRow = Math.floor(e.offsetY / this.cellSize),
+      targetCol = Math.floor(e.offsetX / this.cellSize);
+
+    const targetCell = this.cells[targetRow][targetCol];
+
+    if (targetCell.value != null) return;
+
+    this.draw(targetCell);
+    targetCell.value = this.currentMove;
+    this.changeMove();
+    this.currentMoveEl.innerHTML = this.currentMove;
+
+    this.handleWinner();
+  }
+
+  draw({ x, y }) {
+    this.ctx.fillStyle = '#222';
+    this.ctx.font = '80px Arial';
+    this.ctx.textAlign = 'center';
+    this.ctx.textBaseline = 'middle';
+
+    this.ctx.fillText(this.currentMove, x, y, 200);
+  }
+
+  changeMove() {
+    this.currentMove == 'X'
+      ? (this.currentMove = 'O')
+      : (this.currentMove = 'X');
+  }
+
+  initBoard() {
+    this.ctx.clearRect(0, 0, this.canvasEl.width, this.canvasEl.height);
+    this.winner = null;
+
+    this.cells = [
+      [
+        { x: 100, y: 100, value: null },
+        { x: 300, y: 100, value: null },
+        { x: 500, y: 100, value: null },
+      ],
+      [
+        { x: 100, y: 300, value: null },
+        { x: 300, y: 300, value: null },
+        { x: 500, y: 300, value: null },
+      ],
+      [
+        { x: 100, y: 500, value: null },
+        { x: 300, y: 500, value: null },
+        { x: 500, y: 500, value: null },
+      ],
+    ];
+
+    this.ctx.lineWidth = 4;
+    this.ctx.fillStyle = '#222';
+
+    for (let x = 200; x <= 400; x += 200) {
+      this.ctx.beginPath();
+      this.ctx.moveTo(x, 0);
+      this.ctx.lineTo(x, this.canvasEl.height);
+      this.ctx.stroke();
     }
-    if (turn == 0) {
-      document.getElementById('sign').innerText = 'O';
-    } else {
-      document.getElementById('sign').innerText = 'X';
+
+    for (let y = 200; y <= 400; y += 200) {
+      this.ctx.beginPath();
+      this.ctx.moveTo(0, y);
+      this.ctx.lineTo(this.canvasEl.height, y);
+      this.ctx.stroke();
     }
   }
 
-  function newTurn(e, ctx, oSize, yach, xSize) {
-    let change = false;
-    if (turn == 0) {
-      let turnO = drawO(e, ctx, oSize, yach);
-      if (turnO == true) {
-        turn = 1;
-        change = true;
-      }
-    } else {
-      let turnO = drawX(e, ctx, xSize, yach);
-      if (turnO == true) {
-        turn = 0;
-        change = true;
-      }
+  reset() {
+    location.reload();
+  }
+
+  #calculateWinner(cells) {
+    const flatCells = cells.flat();
+    const squares = [].map.call(flatCells, (item) => item.value);
+
+    const lines = [
+      [0, 1, 2],
+      [3, 4, 5],
+      [6, 7, 8],
+      [0, 3, 6],
+      [1, 4, 7],
+      [2, 5, 8],
+      [0, 4, 8],
+      [2, 4, 6],
+    ];
+
+    for (let i = 0; i < lines.length; i++) {
+      const [a, b, c] = lines[i];
+      if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c])
+        return squares[a];
     }
-    let status = '';
-    for (key of winCondition) {
-      if (
-        turns[key[0][0]][key[0][1]] === turns[key[1][0]][key[1][1]] &&
-        turns[key[1][0]][key[1][1]] === turns[key[2][0]][key[2][1]] &&
-        turns[key[1][0]][key[1][1]] != ' '
-      ) {
-        status = 'Победа';
+
+    if (squares.every((item) => item != null)) return 'Н';
+
+    return null;
+  }
+
+  #drawWinner(text) {
+    this.ctx.fillStyle = 'rgba(0,0,0,0.5)';
+    this.ctx.fillRect(0, 0, this.canvasEl.width, this.canvasEl.height);
+
+    this.ctx.font = '70px Segoe UI';
+    this.ctx.fillStyle = '#fff';
+    this.ctx.textAlign = 'center';
+    this.ctx.fillText(text, this.canvasEl.width / 2, this.canvasEl.height / 2);
+  }
+
+  handleWinner() {
+    this.winner = this.#calculateWinner(this.cells);
+
+    switch (this.winner) {
+      case 'X':
+        this.firstCounter++;
+        this.firstCounterEl.innerHTML = this.firstCounter;
+        this.currentMoveEl.innerHTML = 'X';
+        this.currentMove = 'X';
+
+        this.#drawWinner('Победил "X"');
         break;
-      }
-    }
-    if (status == 'Победа') {
-      odd[plr] += 1;
-      document.getElementById(players[plr]).innerText = odd[plr];
-      ctx.fillStyle = 'rgba(255,255,255,.7)';
-      ctx.fillRect(0, 0, cnvWidth, cnvWidth);
-      ctx.font = '25px Arial';
-      if (plr == 0) {
-        ctx.strokeText('Победил первый', 0, cnvWidth / 2);
-      } else {
-        ctx.strokeText('Победил второй', 0, cnvWidth / 2);
-      }
-    } else if (change == true) {
-      if (plr == 1) {
-        plr = 0;
-      } else {
-        plr = 1;
-      }
-      setOrder();
-    }
-  }
+      case 'O':
+        this.secondCounter++;
+        this.secondCounterEl.innerHTML = this.secondCounter;
+        this.currentMoveEl.innerHTML = 'O';
+        this.currentMove = 'O';
 
-  function getPositionX(e, yach) {
-    if (e.offsetX < yach) {
-      positionX = yach / 2;
-      idx = 0;
-    } else if (e.offsetX < yach * 2) {
-      positionX = yach * 2 - yach / 2;
-      idx = 1;
-    } else {
-      positionX = yach * 3 - yach / 2;
-      idx = 2;
+        this.#drawWinner('Победил "O"');
+        break;
+      case 'Н':
+        this.#drawWinner('Ничья');
+        break;
     }
-    return [positionX, idx];
   }
+}
 
-  function getPositionY(e, yach) {
-    if (e.offsetY < yach) {
-      positionY = yach / 2;
-      idx = 0;
-    } else if (e.offsetY < yach * 2) {
-      positionY = yach * 2 - yach / 2;
-      idx = 1;
-    } else {
-      positionY = yach * 3 - yach / 2;
-      idx = 2;
-    }
-    return [positionY, idx];
-  }
-
-  function drawO(e, ctx, oSize, yach) {
-    [positionX, x] = getPositionX(e, yach);
-    [positionY, y] = getPositionY(e, yach);
-    if (turns[y][x] === ' ') {
-      ctx.beginPath();
-      ctx.arc(positionX, positionY, oSize, 0, 2 * Math.PI);
-      ctx.stroke();
-      turns[y][x] = 'O';
-      return true;
-    } else {
-      return false;
-    }
-  }
-  function drawX(e, ctx, xSize, yach) {
-    [positionX, x] = getPositionX(e, yach);
-    [positionY, y] = getPositionY(e, yach);
-    positionY -= xSize / Math.sqrt(2) / 2;
-    positionX -= xSize / Math.sqrt(2) / 2;
-    if (turns[y][x] === ' ') {
-      ctx.beginPath();
-      ctx.moveTo(positionX, positionY);
-      ctx.lineTo(positionX + xSize, positionY + xSize);
-      ctx.moveTo(positionX, positionY + xSize);
-      ctx.lineTo(positionX + xSize, positionY);
-      ctx.stroke();
-      turns[y][x] = 'X';
-      return true;
-    } else {
-      return false;
-    }
-  }
-};
+const game = new TicTacToe({
+  canvas: '#game',
+  firstCounter: '.info__first-counter',
+  secondCounter: '.info__second-counter',
+  btnNewRound: '.control__new-round',
+  btnReset: '.control__reset',
+  currentMove: '.info__first-move',
+});
