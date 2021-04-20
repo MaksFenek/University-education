@@ -1,0 +1,61 @@
+@use '../base'as b;
+
+.command {
+    background: b.$lighter-bg-color;
+    padding: 50px 0;
+
+    &__title {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &-container {
+        @include b.flex(space-evenly, center);
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    &-card {
+        max-width: 320px;
+
+        p {
+            line-height: 2;
+            margin-top: 10px;
+        }
+    }
+
+    &-work {
+
+        &__title {
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        &-container {
+            @include b.flex(space-between, flex-start);
+        }
+
+        &-card {
+            @include b.flex(center, center);
+            flex-direction: column;
+            max-width: 285px;
+
+            &__circle {
+                @include b.flex(center, center);
+                height: 70px;
+                width: 70px;
+                background: b.$darker-bg-color;
+                border-radius: 50%;
+                font-size: 3rem;
+                color: b.$second-text-color;
+            }
+
+            &__description {
+                text-align: center;
+                line-height: 2;
+                margin-top: 20px;
+            }
+        }
+    }
+}

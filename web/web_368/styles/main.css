@@ -8,6 +8,7 @@
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
+  color: #533738;
 }
 
 ul {
@@ -208,4 +209,60 @@ h3 {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+}
+
+.command {
+  background: #E2C4BA;
+  padding: 50px 0;
+}
+.command__title {
+  text-transform: uppercase;
+  text-align: center;
+}
+.command-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.command-card {
+  max-width: 320px;
+}
+.command-card p {
+  line-height: 2;
+  margin-top: 10px;
+}
+.command-work__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.command-work-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.command-work-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 285px;
+}
+.command-work-card__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  background: #8D7370;
+  border-radius: 50%;
+  font-size: 3rem;
+  color: #FFF;
+}
+.command-work-card__description {
+  text-align: center;
+  line-height: 2;
+  margin-top: 20px;
 }/*# sourceMappingURL=main.css.map */
