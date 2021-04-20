@@ -1,3 +1,4 @@
+@use 'variables'as v;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
@@ -9,4 +10,22 @@
 html {
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+a,
+p {
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: v.$main-text-color;
+}
+
+h1 {
+    font-size: 5rem;
 }

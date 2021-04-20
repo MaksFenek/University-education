@@ -10,6 +10,24 @@ html {
   font-size: 10px;
 }
 
+ul {
+  list-style: none;
+}
+
+a,
+p {
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #533738;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
 .btn {
   font-size: 2rem;
   background: #CC8B86;
@@ -22,4 +40,45 @@ html {
 }
 .btn:hover {
   background: #E2C4BA;
+}
+
+.header {
+  min-height: 100vh;
+  background: url("../assets/headerBg.jpg") center center no-repeat;
+  background-size: cover;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.header-nav__logo {
+  width: 90px;
+  height: 25px;
+  margin-right: 90px;
+}
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header-content {
+  padding-top: 91px;
+  padding-bottom: 168px;
+}
+.header-content__title {
+  max-width: 534px;
+  margin-bottom: 24px;
+}
+.header-content__subtitle {
+  max-width: 424px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

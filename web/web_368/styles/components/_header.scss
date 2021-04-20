@@ -1,0 +1,40 @@
+@use '../base'as b;
+
+.header {
+    min-height: 100vh;
+    background: url('../assets/headerBg.jpg') center center no-repeat;
+    background-size: cover;
+
+    &-nav {
+        @include b.flex(space-between, center);
+        height: 60px;
+
+        &__logo {
+            width: 90px;
+            height: 25px;
+            margin-right: 90px;
+        }
+
+    }
+
+    &-list {
+        @include b.flex(space-between, center);
+        width: 100%;
+    }
+
+    &-content {
+        padding-top: 91px;
+        padding-bottom: 168px;
+
+        &__title {
+            max-width: 534px;
+            margin-bottom: 24px;
+        }
+
+        &__subtitle {
+            max-width: 424px;
+            line-height: 1.5;
+            margin-bottom: 24px;
+        }
+    }
+}
