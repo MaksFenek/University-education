@@ -270,6 +270,7 @@ h3 {
 
 .reviews {
   padding: 35px 0;
+  background: #EFE6E4;
 }
 .reviews__title {
   text-transform: uppercase;
@@ -311,4 +312,51 @@ h3 {
 }
 .reviews-card-imgs img:first-child {
   margin-bottom: 20px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background: #8D7370;
+}
+.contact-form {
+  max-width: 508px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #FFF;
+}
+.contact-form__title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.contact-form__subtitle {
+  line-height: 2;
+  margin-bottom: 24px;
+  max-width: 460px;
+}
+.contact-form__input {
+  background: none;
+  outline: none;
+  border: none;
+  width: 100%;
+  border-bottom: 1px #FFF solid;
+  line-height: 2;
+  font-size: 1.8rem;
+  color: #FFF;
+  margin-top: 20px;
+}
+.contact-form__input::-moz-placeholder {
+  color: #FFF;
+}
+.contact-form__input:-ms-input-placeholder {
+  color: #FFF;
+}
+.contact-form__input::placeholder {
+  color: #FFF;
+}
+.contact-form__btn {
+  margin-top: 40px;
 }/*# sourceMappingURL=main.css.map */

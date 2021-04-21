@@ -1,0 +1,46 @@
+@use '../base'as b;
+
+.contact {
+    @include b.flex(space-evenly, flex-start);
+    background: b.$darker-bg-color;
+
+    &-form {
+        max-width: 508px;
+        @include b.flex(center, flex-start);
+        flex-direction: column;
+        color: b.$second-text-color;
+
+        &__title {
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        &__subtitle {
+            line-height: 2;
+            margin-bottom: 24px;
+            max-width: 460px;
+        }
+
+        &__input {
+            background: none;
+            outline: none;
+            border: none;
+            width: 100%;
+            border-bottom: 1px b.$second-text-color solid;
+            line-height: 2;
+            font-size: 1.8rem;
+            color: b.$second-text-color;
+            margin-top: 20px;
+
+            &::placeholder {
+                color: b.$second-text-color;
+
+            }
+        }
+
+        &__btn {
+            margin-top: 40px;
+        }
+
+    }
+}
