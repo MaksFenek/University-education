@@ -1,0 +1,12 @@
+@use '../base'as b;
+
+.footer {
+    background: b.$main-bg-color;
+    padding: 37px 0;
+
+    .container {
+        @include b.flex(space-between, center);
+
+    }
+
+}

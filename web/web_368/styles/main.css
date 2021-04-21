@@ -359,4 +359,14 @@ h3 {
 }
 .contact-form__btn {
   margin-top: 40px;
+}
+
+.footer {
+  background: #EFE6E4;
+  padding: 37px 0;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
