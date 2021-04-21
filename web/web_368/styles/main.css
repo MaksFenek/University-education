@@ -266,4 +266,49 @@ h3 {
   max-width: 424px;
   line-height: 1.5;
   margin-bottom: 24px;
+}
+
+.reviews {
+  padding: 35px 0;
+}
+.reviews__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.reviews-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.reviews-container__back-arrow {
+  transform: rotate(180deg);
+}
+.reviews-container__back-arrow, .reviews-container__forward-arrow {
+  height: 72px;
+  width: 72px;
+  background: #E2C4BA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.reviews-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.reviews-card__description {
+  max-width: 407px;
+  line-height: 2;
+  margin-right: 20px;
+}
+.reviews-card-imgs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.reviews-card-imgs img:first-child {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */

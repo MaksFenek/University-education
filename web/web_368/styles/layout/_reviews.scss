@@ -1,0 +1,47 @@
+@use '../base'as b;
+
+.reviews {
+    padding: 35px 0;
+
+    &__title {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &-container {
+        @include b.flex(space-evenly, center);
+
+        &__back-arrow {
+            transform: rotate(180deg)
+        }
+
+        &__back-arrow,
+        &__forward-arrow {
+            height: 72px;
+            width: 72px;
+            background: b.$lighter-bg-color;
+            @include b.flex(center, center);
+            border-radius: 50%;
+        }
+    }
+
+    &-card {
+        @include b.flex(space-around, center);
+
+        &__description {
+            max-width: 407px;
+            line-height: 2;
+            margin-right: 20px;
+        }
+
+        &-imgs {
+            @include b.flex(space-between, center);
+            flex-direction: column;
+
+            img:first-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
