@@ -1,5 +1,8 @@
 @use '../base'as b;
 
+%margin-top {
+    margin-top: 50px;
+}
 .contact {
     @include b.flex(space-evenly, flex-start);
     background: b.$darker-bg-color;
@@ -11,7 +14,7 @@
         color: b.$second-text-color;
 
         &__title {
-            margin-top: 50px;
+            @extend %margin-top;
             margin-bottom: 20px;
         }
 
@@ -39,7 +42,7 @@
         }
 
         &__btn {
-            margin-top: 40px;
+           @extend %margin-top;
         }
 
     }
